@@ -29,10 +29,11 @@ enter the deb package builder directory
 ## 3. Create your laurux deb file
 
 	make package
+	cd ../
 
 ## 4. Install your new package
 
-	sudo dpkg -i ../laurux_0.1-1_all.deb
+	sudo dpkg -i laurux_0.1-1_all.deb
 
 ## 5. Start Laurux
 
