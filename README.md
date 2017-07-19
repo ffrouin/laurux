@@ -10,7 +10,11 @@ You can use this data to build a laurux package for your debian
 system. This package will allow you to enable multiuser usage of
 the laurux application originaly designed for a single user usage.
 
-## Download this repository
+If you just want try this package before creating it, you may jump
+to section 4 directly. This repository contain the last build I made
+before to publish this data (tested on Ubuntu 14.04 LTS).
+
+## 1. Download this repository
 
 	git clone https://github.com/ffrouin/laurux
 
@@ -18,18 +22,18 @@ enter the deb package builder directory
 
 	cd laurux/laurux_0.1
 
-## Download the latest release of Laurux
+## 2. Download the latest release of Laurux
 
 	make download
 
-## Create your laurux deb file
+## 3. Create your laurux deb file
 
 	make package
 
-## Install your new package
+## 4. Install your new package
 
 	sudo dpkg -i ../laurux_0.1-1_all.deb
 
-## Start Laurux
+## 5. Start Laurux
 
 	laurux
