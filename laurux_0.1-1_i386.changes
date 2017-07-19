@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Wed, 19 Jul 2017 16:35:08 +0200
+Source: laurux
+Binary: laurux
+Architecture: source all
+Version: 0.1-1
+Distribution: unstable
+Urgency: low
+Maintainer: Freddy Frouin <freddy@linuxtribe.fr>
+Changed-By: freddy <freddy@helix>
+Description: 
+ laurux     - Laurux Package for Debian
+Changes: 
+ laurux (0.1-1) unstable; urgency=low
+ .
+   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+Checksums-Sha1: 
+ 46df3b12580c3c40b98af6351335dbe96bc4d83c 784 laurux_0.1-1.dsc
+ a271c960ddbbd7bed04c0fe6924ad11772cddf2e 17780251 laurux_0.1.orig.tar.gz
+ f0a31913eb94efac7ebac8ec2a71a886022a58ea 9496 laurux_0.1-1.debian.tar.gz
+ 61f073c1e5a577b6ac08b1e7d2cf7812be487128 14922038 laurux_0.1-1_all.deb
+Checksums-Sha256: 
+ a857f9d47ac54f503989b8e6adc26e45c23c4ab2b66e4a6a6174693c16ae3d5c 784 laurux_0.1-1.dsc
+ efbbaf880fe52881f1a8a5798974f10e8289b7d2949234281c598836aab02890 17780251 laurux_0.1.orig.tar.gz
+ a8f0910a748acb978423ac13df7533083fd72ee7c25212edba906933fce4649f 9496 laurux_0.1-1.debian.tar.gz
+ 34ee2c535eab2004f0e42d3eb44e72044e82d3485e1fde29c73a6e672bb47725 14922038 laurux_0.1-1_all.deb
+Files: 
+ c233439be7a40c62655eca6958787a6b 784 x11 optional laurux_0.1-1.dsc
+ 54980adebd77418094bad901e84b5961 17780251 x11 optional laurux_0.1.orig.tar.gz
+ 608ff07661d6aaa2aaf9d6a5e5b05a85 9496 x11 optional laurux_0.1-1.debian.tar.gz
+ 0e6ff848856c709f19e686071f118df2 14922038 x11 optional laurux_0.1-1_all.deb
