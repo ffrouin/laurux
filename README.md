@@ -8,14 +8,12 @@ application.
 
 	git clone https://github.com/ffrouin/laurux
 
-rename the deb-package-builder directory
+enter the deb package builder directory
 
-	cd laurux
-	mv deb-package-builder laurux_0.1
+	cd laurux/laurux_0.1
 
-## Download the latest release of Laurux
+## Download the latest release of Laurux we need in package
 
-	cd laurux_0.1
 	make download
 
 ## Create your laurux deb file
