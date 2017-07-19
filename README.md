@@ -15,6 +15,7 @@ rename the deb-package-builder directory
 
 ## Download the latest release of Laurux
 
+	cd laurux_0.1
 	make download
 
 ## Create your laurux deb file
