@@ -14,6 +14,12 @@ If you just want try this package before creating it, you may jump
 to section 4 directly. This repository contain the last build I made
 before to publish this data (tested on Ubuntu 14.04 LTS).
 
+Otherwise, you may want to use our ppa to be able de deploy laurux :
+
+	apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 47CBC05C
+	add-apt-repository ppa:freddy-f/ppa
+	apt-get update && apt-get install laurux
+
 ## 1. Download this repository
 
 	git clone https://github.com/ffrouin/laurux
@@ -38,3 +44,4 @@ enter the deb package builder directory
 ## 5. Start Laurux
 
 	laurux
+
