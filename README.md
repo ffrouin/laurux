@@ -34,6 +34,9 @@ enter the deb package builder directory
 
 ## 3. Create your laurux deb file
 
+Install required system packages:
+	sudo apt-get install devscripts build-essential lintian
+
 	make package
 	cd ../
 
