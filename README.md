@@ -15,6 +15,9 @@ Any information about laurux (french) : [Laurux Website](http://www.laurux.fr)
 Here is our PPA details :
 
 	add-apt-repository ppa:freddy-f/ppa
+
+Then update your app db and install laurux :
+
 	apt-get update && apt-get install laurux
 
 In case you miss the repo public key :
