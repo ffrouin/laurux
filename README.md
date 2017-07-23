@@ -1,18 +1,12 @@
-# Laurux debian package builder
+# Laurux debian package builder for Ubuntu PPA
 
 Laurux is an application designed for french companies or professional
 individuals that need an application to manage their business : commercial,
 billing, french accounting, point of sale.
 
-Any information about laurux (french technology) : [Laurux Website](http://www.laurux.fr)
+Any information about laurux (french) : [Laurux Website](http://www.laurux.fr)
 
-You can use this data to build a laurux package for your debian
-system. This package will allow you to enable multiuser usage of
-the laurux application originaly designed for a single user usage.
-
-If you just want try this package before creating it, you may jump
-to section 4 directly. This repository contain the last build I made
-before to publish this data (tested on Ubuntu 14.04 LTS).
+# Connect our PPA to get laurux from your Ubuntu System
 
 Otherwise, you may want to use our ppa to be able de deploy laurux :
 
@@ -22,6 +16,19 @@ Otherwise, you may want to use our ppa to be able de deploy laurux :
 In case you miss the repo public key :
 
 	apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 47CBC05C
+
+You can use this data to build a laurux package for your debian
+system. This package will allow you to enable multiuser usage of
+the laurux application originaly designed for a single user usage.
+
+# You prefer make your own debian package
+
+If you just want try this package before creating it, you may jump
+to section 4 directly. This repository contain the last build I made
+on i386 before to publish this data (tested on Ubuntu 14.04 LTS).
+
+Install required system packages:
+	sudo apt-get install devscripts build-essential lintian
 
 ## 1. Download this repository
 
@@ -36,9 +43,6 @@ enter the deb package builder directory
 	make orig-pkg
 
 ## 3. Create your laurux deb file
-
-Install required system packages:
-	sudo apt-get install devscripts build-essential lintian
 
 	make bin-release
 	cd ../
