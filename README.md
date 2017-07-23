@@ -40,20 +40,21 @@ Install required system packages:
 
 enter the deb package builder directory
 
-	cd laurux/laurux_0.9
+	cd laurux/
 
 ### 2. Download the latest release of Laurux
 
-	make orig-pkg
+	cd laurux_0.13
+	make dl && make
 
 ### 3. Create your laurux deb file
 
-	make bin-release
-	cd ../
+	cd ..
+	make release-bin
 
 ### 4. Install your new package
 
-	sudo dpkg -i laurux_0.9-1ubuntu1_i386.deb
+	sudo dpkg -i laurux_0.13-1ubuntu1_i386.deb
 
 ### 5. Start Laurux
 
