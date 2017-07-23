@@ -18,12 +18,9 @@ Any information about laurux (french) : [Laurux Website](http://www.laurux.fr)
 	sudo apt-get update
 	sudo apt-get install gambas3
 
-### Then connect to our ppa :
+### Then connect to our ppa and deploy laurux
 
 	sudo add-apt-repository ppa:freddy-f/ppa
-
-### Finaly update your app db and install laurux :
-
 	sudo apt-get update
 	sudo apt-get install laurux
 
