@@ -12,20 +12,22 @@ Any information about laurux (french) : [Laurux Website](http://www.laurux.fr)
 
 ## Connect our PPA to get laurux from your Ubuntu System
 
-Here is our PPA details :
+### First connect to the gambas3 team ppa
+
+	sudo add-apt-repository ppa:gambas-team/gambas3
+	sudo apt-get update
+	sudo apt-get install gambas3
+
+### Then connect to our ppa :
 
 	sudo add-apt-repository ppa:freddy-f/ppa
 
-Then update your app db and install laurux :
+### Finaly update your app db and install laurux :
 
 	sudo apt-get update
 	sudo apt-get install laurux
 
-In case you miss the repo public key :
-
-	apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 47CBC05C
-
-## You prefer make your own debian package
+## You prefer build your own debian package
 
 If you just want try this package before creating it, you may jump
 to section 4 directly. This repository contain the last build I made
