@@ -8,7 +8,7 @@ Any information about laurux (french) : [Laurux Website](http://www.laurux.fr)
 
 # Connect our PPA to get laurux from your Ubuntu System
 
-Otherwise, you may want to use our ppa to be able de deploy laurux :
+Here is our PPA details :
 
 	add-apt-repository ppa:freddy-f/ppa
 	apt-get update && apt-get install laurux
