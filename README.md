@@ -31,6 +31,7 @@ to section 4 directly. This repository contain the last build I made
 on i386 before to publish this data (tested on Ubuntu 14.04 LTS).
 
 Install required system packages:
+
 	sudo apt-get install devscripts build-essential lintian
 
 ### 1. Download this repository
