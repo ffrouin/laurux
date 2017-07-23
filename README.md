@@ -16,9 +16,12 @@ before to publish this data (tested on Ubuntu 14.04 LTS).
 
 Otherwise, you may want to use our ppa to be able de deploy laurux :
 
-	apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 47CBC05C
 	add-apt-repository ppa:freddy-f/ppa
 	apt-get update && apt-get install laurux
+
+In case you miss the repo public key :
+
+	apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 47CBC05C
 
 ## 1. Download this repository
 
