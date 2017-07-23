@@ -4,6 +4,10 @@ Laurux is an application designed for french companies or professional
 individuals that need an application to manage their business : commercial,
 billing, french accounting, point of sale.
 
+You can use this data to build a laurux package for your debian
+system. This package will allow you to enable multiuser usage of
+the laurux application originaly designed for a single user usage.
+
 Any information about laurux (french) : [Laurux Website](http://www.laurux.fr)
 
 ## Connect our PPA to get laurux from your Ubuntu System
@@ -16,10 +20,6 @@ Here is our PPA details :
 In case you miss the repo public key :
 
 	apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 47CBC05C
-
-You can use this data to build a laurux package for your debian
-system. This package will allow you to enable multiuser usage of
-the laurux application originaly designed for a single user usage.
 
 ## You prefer make your own debian package
 
