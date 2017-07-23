@@ -1,0 +1,457 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="fr-fr"><head>
+  
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=iso-8859-15">
+  <title>Laurux . GED Gestion électronique des documents</title>
+
+  
+  
+  <meta name="GENERATOR" content="OpenOffice.org 1.1.0  (Linux)">
+
+  
+  <meta name="CREATED" content="20040403;10240700">
+
+  
+  <meta name="CHANGED" content="20040404;10390700">
+
+  
+  <meta name="robots" content="noindex">
+
+</head><body style="background-image: url(sand.jpg);" link="#0000ff" vlink="#800080">
+<table class="header" cellspacing="0" width="100%">
+
+  <tbody>
+    <tr valign="bottom">
+      <td rowspan="2" class="header" align="left">
+      <h1> ~ Comptabilité &amp; Facturation Laurux ~ </h1>
+      </td>
+      <td class="header" align="right"><br>
+      </td>
+    </tr>
+    <tr valign="bottom">
+      <td class="header" align="left">
+      <p><img src="Larus.gif" height="80" width="70"></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h2>GED Gestion électronique des documents .</h2>
+
+<p align="center"><font color="#00ff00"><a name="Comptes"></a>----------------------------------------------------------------------------------------------------------------------</font></p>
+
+<dir></dir>
+
+&nbsp;&nbsp;&nbsp; La <a href="http://fr.wikipedia.org/wiki/Gestion%20%C3%89lectronique%20des%20Documents" class="interwiki iw_wpfr" title="http://fr.wikipedia.org/wiki/Gestion Électronique des Documents">Gestion
+Électronique des Documents</a> ou GED désigne un procédé informatisé
+visant à organiser et gérer des informations et des documents
+électroniques au sein d'une organisation. Il met principalement en
+oeuvre des systèmes d'acquisition, de classement, de stockage,
+d'archivage des documents (exemple d&#8217;utilisation : la numérisation de
+documents papiers). La GED participe aux processus de travail
+collaboratif, de capitalisation et d'échanges d'informations. C'est un
+processus de finalité qui découle du cycle de vie du document. La GED
+peut permettre un gain de temps et d'argent énorme pour les
+organisations. En effet, elle permet l'indexation des documents et
+surtout la numérisation qui comprime le « volume papier ». <br>
+
+&nbsp;&nbsp;&nbsp; Il existe 4 étapes majeures dans la gestion
+électronique des
+documents&nbsp;: acquisition, traitement, stockage et diffusion.<br>
+
+<br>
+
+<h3><big>1- Préalable.</big></h3>
+
+&nbsp;&nbsp;&nbsp; La GED, pour fonctionner correctement nécessite de
+renseigner certains paramètres dans les préférences (onglet PDF).
+Ces paramètres concernent les lieux de stockage des fichiers. Prenez
+soin de bien définir le nom des répertoires utilisés et de ne pas
+utiliser d'espace ni de caractères exotiques ( tel que &amp;#%$ etc...)<br>
+
+&nbsp;&nbsp;&nbsp; Toutes les opérations de scan se font à l'aide du
+logiciel Xsane, il
+faut donc procéder à son installation puis à son paramétrage initial
+(voir plus loin). <br>
+
+&nbsp;&nbsp;&nbsp; Pour installer Xsane, dans un terminal taper&nbsp; :
+sudo apt-get install xsane<br>
+
+<br>
+
+<div style="text-align: center;"><img style="width: 894px; height: 745px;" alt="Prefs7.png" src="Prefs7.png"><br>
+</div>
+
+<h3><br>
+</h3>
+
+<h3><big>2- La génération des PDF et l'acquisition des documents.</big><br>
+</h3>
+
+&nbsp;&nbsp;&nbsp; L'acquisition des documents peut se faire
+manuellement ou automatiquement.<br>
+
+&nbsp;&nbsp;&nbsp; <span style="font-style: italic; text-decoration: underline;"><span style="font-weight: bold;">A- Génération
+automatique</span><br>
+</span>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Laurux propose plusieurs
+acquisitions automatiques. En impression des documents clients et en
+impression des documents fournisseurs (commandes et bons de réception).
+Le logiciel, va stocker le document PDF généré lors de l'impression
+dans un sous-répertoire nommé <b><font color="#944794">"Facs"</font></b>
+situé dans le répertoire défini dans les préférences.<br>
+
+<b><font color="#944794">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; </font></b>Pour
+activer cette fonction d'archivage il faut cocher l'option ad hoc dans
+les fiches clients et fournisseurs.<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <br>
+
+&nbsp;&nbsp;&nbsp; <span style="font-style: italic; text-decoration: underline;"><span style="font-weight: bold;">B- Acquisition manuelle</span><br>
+</span>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Il y a deux possibilités&nbsp;
+d'acquisition manuelle. <br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <span style="font-style: italic; text-decoration: underline;">1- Pour un
+document existant<span style="font-style: italic;"><span style="text-decoration: underline;"></span></span><br>
+</span>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; L'acquisition manuelle peut se
+faire a partir des fiches clients, fournisseurs et articles à l'aide
+d'un bouton situé dans l'onglet <b><font color="#944794">"Documents
+liés"</font></b> . Cette acquisition se fait a partir d'un document
+existant sur un support numérique (disque dur, cle USB etc...)<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; La nature du fichier n'a pas
+d'importance. On peut archiver du PDF, du png, du tiff, du txt etc...<br>
+
+<br>
+
+<div style="text-align: center;"><img style="width: 901px; height: 419px;" alt="Ged1.png" src="Ged1.png"><br>
+</div>
+
+<span style="font-style: italic; text-decoration: underline;"></span><br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Avant de lancer la recherche d'un
+document a archiver, le programme offre la possibilité de saisir des
+étiquettes (Tag). Chaque étiquette est séparée par une virgule. Dans
+notre exemple on utilise cg pour carte grise, cc pour camping car puis
+on saisit l'immatriculation.<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Lorsque la saisie des étiquettes est
+faite alors on lance la recherche en cliquant sur le bouton <b><font color="#944794">"Copier"</font></b>.<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; NB : Le programme affectera
+automatiquement le code client (ou fournisseur, ou article) dans les
+étiquettes.<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Tout document généré de cette façon
+sera stocké dans un sous-répertoire nommé <b><font color="#944794">"Docs"
+</font></b>situé dans le répertoire défini dans les préférences.<br>
+
+<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="font-style: italic; text-decoration: underline;">2- Pour un
+document inexistant<span style="font-style: italic;"><span style="text-decoration: underline;"></span></span><br>
+</span>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Pour scanner un document
+inexistant et stocker le PDF dans la fiche idoine on lancera le
+programme d'acquisition situé sous "Gestion
+==&gt; GED ==&gt; Acquisition ou alors directement a partir des fiches
+clients, fournisseurs ou produits ou bien encore a partir de la saisie
+des écritures en comptabilité.<br>
+
+<br>
+
+<div style="text-align: center;"><img style="width: 536px; height: 347px;" alt="Ged2.png" src="Ged2.png"><br>
+</div>
+
+<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; On saisira en premier le lieu précis ou
+le fichier scanné sera copié.&nbsp; Attention, le dossier de
+destination doit obligatoirement exister. De plus il doit correspondre
+au répertoire défini dans les préférences.<br>
+
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp; Comme indiqué sur l'écran, on saisit le
+nom du fichier sans l'extension. Puis on saisira les étiquettes.
+Veillez a bien saisir le code client (ou fournisseur ou article) si
+vous n' êtes pas passé par une fiche, car ce
+code sera utilisé pour la mise à jour de la base mais aussi il pourra
+servir pour les recherches de documents. Si vous lancer le scan a
+partir d'une fiche (client, fournisseur ou article) alors il n'est pas
+nécessaire de saisir le code car le programme le mettra
+automatiquement&nbsp; dans l'étiquette.<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Ces données étant saisies on pourra
+cliquer sur le bouton <b><font color="#944794">"Scanner"</font></b> ce
+qui ouvrira le logiciel <b><font color="#944794">"Xsane"</font></b><br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <br>
+
+<div style="text-align: center;"><img style="width: 719px; height: 437px;" alt="Ged3.png" src="Ged3.png"><br>
+</div>
+
+<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Xsane étant lancé, on s'assurera que
+dans la page de droite on aura bien Multipage de sélectionné. On
+sélectionnera aussi la résolution du scan. 100 DPI étant une définition
+correcte qui produit un fichier relativement leger.<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Dans la page de gauche on veillera
+impérativement a saisir un nom de fichier = xsane (sous le repertoire
+utilisateur) car ce nom sera utilisé par la suite par Laurux et a
+mettre le type du document multipage&nbsp; en PDF.<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Lorsqu'on est prêt a scanner on
+cliquera sur le bouton <b><font color="#944794">"Numériser"</font></b>de
+la page de droite. A la fin du scan on cliquera sur le bouton <b><font color="#944794">"Enregistrer le fichier multipage"</font></b> sur la
+page de gauche puis on fermera Xsane pour revenir sous Laurux. <br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Si on a plusieurs pages a réunir dans
+un même document PDF, on scannera l'ensemble des pages puis on
+enregistrera le fichier multipage.<br>
+
+<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Lors de la première utilisation
+le repertoire de travail xsane (/home/xx/xsane, xx étant le repertoire
+utilisateur) n'existe pas et on aura donc la fenêtre suivante<br>
+
+<br>
+
+<div style="text-align: center;"><img style="width: 383px; height: 331px;" alt="Ged4.png" src="Ged4.png"><br>
+</div>
+
+<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Il faudra cliquer sur le bouton <b><font color="#944794">"Créer un projet"</font></b> avant de pouvoir scanner.<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Tout document généré de cette façon
+sera stocké dans un sous-répertoire nommé <b><font color="#944794">"Docs"
+</font></b>situé dans le répertoire défini dans les préférences.<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; NB: Xsane enregistre ses paramètres de
+travail à la fermeture.<br>
+
+<br>
+
+<h3><big>3- La génération automatique.</big><br>
+</h3>
+
+&nbsp;&nbsp;&nbsp; Comme dit ailleurs dans la documentation, le
+logiciel génère automatiquement un fichier PDF pour les clients à
+l'impression d'une facture et pour les fournisseurs à la validation
+d'un BR dans la mesure ou les comptes utilisés ont bien le bouton <b><font color="#944794">"Copie automatique des documents"</font></b>
+coché dans leur fiche. Cette opération va aussi ajouter un lien dans
+l'écriture comptable générée et on pourra donc, en comptabilité,
+afficher le document en visualisation des extraits de compte.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Les comptes possédant un document lié auront
+une étoile (*) devant leur code.<br>
+
+<br>
+
+<div style="text-align: center;"><img style="width: 1048px; height: 237px;" alt="Ged5.png" src="Ged5.png"><br>
+</div>
+
+<br>
+
+&nbsp;&nbsp;&nbsp; Pour ouvrir le document il faudra faire un clic
+droit sur la ligne ayant l'étoile.<br>
+
+&nbsp;&nbsp;&nbsp; Rappel : Pour modifier une ligne, il faut faire un
+double clic.<br>
+
+<br>
+
+<h3><big>4- La gestion des documents liés aux écritures de comptabilité.</big><br>
+</h3>
+
+&nbsp;&nbsp;&nbsp; Nous avons vu plus haut, en acquisition manuelle,
+qu'il était possible de lié un documents pdf à une écriture de
+comptabilité.<br>
+
+&nbsp;&nbsp;&nbsp; Voici comment procéder.<br>
+
+&nbsp;&nbsp;&nbsp; Dans les programmes de saisie des écritures on
+commence généralement par la saisie du compte tiers. Le compte tiers
+étant saisit on cliquera sur le bouton&nbsp;<img style="width: 118px; height: 36px;" alt="Ged6.png" src="Ged6.png">&nbsp;
+le programme demandera si on souhaite copier un document existant ou si
+on souhaite en scanner un nouveau. La première option permettra la
+récupération d'un document existant sur un support quelconque et la
+seconde ouvrira le module de la GED permettant de saisir le nom du
+fichier a scanner ainsi que les étiquettes.&nbsp; Laurux va renseigner
+automatiquement trois étiquettes, le numéro de l'écriture, le compte
+tiers et, si on saisit une
+écriture de trésorerie, le compte banque. Attention, ces étiquettes ne
+sont pas visibles. A vous de saisir ensuite vos propres étiquettes
+utiles pour des recherches futures.<br>
+
+&nbsp;&nbsp;&nbsp; Ensuite, en extrait de compte, toute écriture ayant
+un document lié aura une étoile (*) en début de ligne. Il faudra faire
+un clic droit sur la ligne concernée poiur ouvrir le ou les documents
+liés à l'écriture.<br>
+
+&nbsp;&nbsp;&nbsp; NB : On peut saisir plusieurs documents pour une
+même écriture.<br>
+
+<br>
+
+<h3><big>5- L'Organisation des dossiers.</big><br>
+</h3>
+
+&nbsp;&nbsp;&nbsp; Il est donc possible de gérer les documents pour les
+clients, les fournisseurs, les articles, les écritures de comptabilité
+et même les documents externes à Laurux (ceux qu'on nomme "Autres")
+mais qu'en est-il de l'organisation des dossiers ?<br>
+
+<br>
+
+&nbsp;&nbsp;&nbsp; Voilà comment s'articulent les dossiers de la GED.<br>
+
+<br>
+
+&nbsp;&nbsp;&nbsp; <span style="font-weight: bold;"><span style="font-style: italic;">A- Clients.</span></span><br>
+
+<span style="font-weight: bold;"><span style="font-style: italic;">&nbsp;&nbsp;&nbsp;
+</span></span>&nbsp;&nbsp;&nbsp;
+Repertoire défini dans les préférences&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|&nbsp;&nbsp; 411xxx &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
+|&nbsp;&nbsp;&nbsp;&nbsp; Docs&nbsp; ==&gt; Tout document scanné ou
+copié a partir des fiches clients ou de la GED.<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;
+Facs&nbsp;&nbsp; ==&gt; Tout document généré par la facturation.&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <br>
+
+&nbsp; <br>
+
+<span style="font-weight: bold;"><span style="font-style: italic;">&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-weight: bold;"><span style="font-style: italic;">B- Fournisseurs.</span></span><br>
+
+<span style="font-weight: bold;"><span style="font-style: italic;">&nbsp;&nbsp;&nbsp;
+</span></span>&nbsp;&nbsp;&nbsp;
+Repertoire défini dans les préférences&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|&nbsp;&nbsp; 401xxx &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
+|&nbsp;&nbsp;&nbsp;&nbsp;
+Docs&nbsp; ==&gt; Tout document copié ou scanné a partir des fiches
+fournisseurs ou de la GED, toute commande.<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+|&nbsp;&nbsp;&nbsp;&nbsp; BR &nbsp; &nbsp; ==&gt; Les bons de réception
+généré
+par la validation des BR.<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+|&nbsp;&nbsp;&nbsp;&nbsp; FAC &nbsp; ==&gt; Les factures fournisseurs
+scannées lors de la validation des BR.<br>
+
+<span style="font-weight: bold;"><span style="font-style: italic;">&nbsp;&nbsp;&nbsp;
+C- Articles.</span></span><br>
+
+<span style="font-weight: bold;"><span style="font-style: italic;">&nbsp;&nbsp;&nbsp;
+</span></span>&nbsp;&nbsp;&nbsp;
+Repertoire défini dans les préférences&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|&nbsp;&nbsp; Docs&nbsp; ==&gt; Tout document copié ou scanné a partir
+des fiches articles ou de la GED<br>
+
+<br>
+
+<span style="font-weight: bold;"><span style="font-style: italic;">&nbsp;&nbsp;&nbsp;
+D- Comptabilité.</span></span><br>
+
+<span style="font-weight: bold;"><span style="font-style: italic;">&nbsp;&nbsp;&nbsp;
+</span></span>&nbsp;&nbsp;&nbsp;
+Repertoire défini dans les préférences&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|&nbsp;&nbsp; AAAA<span style="font-weight: bold;"><span style="font-style: italic;"></span></span>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp; |&nbsp;&nbsp; 401xxx&nbsp; ==&gt; Tout
+document scanné ou copié lors d'une saisie d'écriture pour un
+fournisseur.<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; |&nbsp;&nbsp; 411xxx&nbsp;
+==&gt; Tout
+document scanné ou copié lors d'une saisie d'écriture pour un client.<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; NB : AAAA représente l'année en cours.<br>
+
+<br>
+
+<span style="font-weight: bold;"><span style="font-style: italic;">&nbsp;&nbsp;
+</span></span><span style="font-weight: bold;"><span style="font-style: italic;">E- Autres.</span></span><br>
+
+<span style="font-weight: bold;"><span style="font-style: italic;">&nbsp;&nbsp;&nbsp;
+</span></span>&nbsp;&nbsp;&nbsp;
+Repertoire défini dans les préférences&nbsp;&nbsp;&nbsp;&nbsp;
+|&nbsp;&nbsp;&nbsp; XXXXX &nbsp; ==&gt; Tout document scanné a partir
+de la GED<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; NB : Les répertoires des documents
+"Autres" étant libres XXXXX représente le répertoire saisit par
+l'utilisateur.<br>
+
+<br>
+
+<h3><big>6- Les recherches</big><br>
+</h3>
+
+&nbsp;&nbsp;&nbsp; Dans le menu de la GED Laurux offre une option de
+recherche qui va permettre les recherches de documents et
+éventuellement la suppression de liens ou de fichiers.<br>
+
+<br>
+
+<div style="text-align: center;"><img style="width: 870px; height: 553px;" alt="Ged9.png" src="Ged9.png"><br>
+</div>
+
+<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; En premier lieu on saisira l'étiquette
+a rechercher puis on cochera le type de recherche a faire. Dans notre
+exemple la recherche des écritures ayant des liens avec le compte
+411005 affiche deux lignes pour l'écriture 13199. On aurait pu faire la
+recherche sur l'écriture 13199 et on aurait eu le même résultat.<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Pour supprimer un lien, on sélectionne
+la ligne a supprimer et on fait <b><font color="#944794">"Suppr"</font></b>.
+Le lien étant supprimé le programme demandera si on souhaite effacer le
+fichier.<br>
+
+<dir>
+<dl>
+</dl>
+</dir>
+
+<p align="center"><font color="#00ff00">----------------------------------------------------------------------------------------------------------------------</font></p>
+
+<dir> </dir>
+
+<p><a name="Societes"></a><a href="Ged.html">retour en haut de
+la page</a><font color="#0000ff"> </font></p>
+
+<p><a href="LauruxIndexParCategories.html">Index de Laurux</a><font color="#0000ff"> </font></p>
+
+</body></html>

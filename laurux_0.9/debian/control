@@ -1,0 +1,16 @@
+Source: laurux
+Section: x11
+Priority: optional
+Maintainer: Freddy Frouin <freddy@linuxtribe.fr>
+Build-Depends: debhelper (>= 8.0.0), wget, git, gambas3, gambas3-gb-desktop-x11
+Standards-Version: 3.9.4
+Homepage: http://www.laurux.fr
+#Vcs-Git: git://git.debian.org/collab-maint/laurux.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/laurux.git;a=summary
+
+Package: laurux
+Architecture: any
+Depends: gambas3-runtime, ${shlibs:Depends}
+Description: Laurux Package for Debian
+  Laurux is an application designed for french companies or professional individuals that need an application to manage their business : commercial, billing, french accounting, point of sale.
+  This package will allow you to enable multiuser usage of the laurux application originaly designed for a single user usage.

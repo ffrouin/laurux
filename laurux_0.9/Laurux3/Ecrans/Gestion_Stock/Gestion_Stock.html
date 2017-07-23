@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+
+
+
+
+
+  
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=iso-8859-15"><title>Laurux . Principe de la gestion de stock sous Laurux.</title></head><body style="background-image: url(sand.jpg);" link="#0000ff" vlink="#800080">
+<table class="header" cellspacing="0" width="100%">
+
+  <tbody>
+    <tr valign="bottom">
+      <td rowspan="2" class="header" align="left">
+      <h1> ~ Comptabilité et Facturation Laurux ~ </h1>
+      </td>
+      <td class="header" align="right"><br>
+      </td>
+    </tr>
+    <tr valign="bottom">
+      <td class="header" align="left">
+      <p><img src="Larus.gif" height="80" width="70"></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><big style="color: rgb(204, 0, 0);"><big>Documentation en cours.....</big></big> <br>
+</p>
+
+<ul>
+
+  <h3><a name="Bcr"></a>&nbsp;&nbsp;&nbsp; Principes de la gestion de
+stock sous Laurux.</h3>
+  <p>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; La gestion de stock est un paramètre important&nbsp;
+pour une entreprise. Elle permet d'une part de répondre rapidement aux
+demandes (livraisons et commandes) des clients et d'autre part de
+limiter son impact
+sur la trésorerie de l'entreprise.<br>
+  </p>
+  <p>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; Nous allons voir ci-dessous comment s'organiser et
+paramétrer correctement Laurux pour optimiser sa gestion de stock. <br>
+  </p>
+  <p style="font-weight: bold;">1- Quelques théories indispensables.</p>
+  <p>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; <span style="font-style: italic; text-decoration: underline;">Tenue des
+stocks:</span><b> </b>C'est le moyen de connaître en temps réel la
+quantité de produits physiquement stockés, potentiels, affectés ou
+disponibles.<u><br>
+  </u>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <u style="text-decoration: underline; font-style: italic;">Gestion des
+stocks</u><span style="text-decoration: underline; font-style: italic;">:</span><b>
+  </b>C'est la mise en œuvre de certains moyens pour savoir quand et
+combien approvisionner.&nbsp; <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="font-style: italic; text-decoration: underline;">Pilotage des
+stocks:</span><span style="text-decoration: underline;"></span> C'est
+la mise en place d'une politique de stocks, c'est en définir les
+répercussions financières et les niveaux de risques et c'est également
+l'application d'une politique d'approvisionnement.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <span style="font-style: italic; text-decoration: underline;">Optimisation
+d'un stock:</span><span style="font-style: italic;">&nbsp; </span>c&nbsp;&#8217;est
+le compromis idéal entre un coût de stockage minimum et un taux de
+service maximum. <span style="font-style: italic;"> </span><br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="font-style: italic;"></span>Les 4 méthodes de gestion de stocks:<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+La méthode de réapprovisionnement appelée aussi méthode calendaire.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+La méthode de gestion à point de commande.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+La méthode de recomplètement.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+La méthode de réapprovisionnement à la commande.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Nous ne traiterons
+pas ici la théorie de chaque méthode. Il est aisé de trouver sur le web
+des sites spécialisés qui fournissent toutes les informations utiles.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; <br>
+  </p>
+</ul>
+
+<ul>
+
+  <p style="font-weight: bold;">2- La mise en place.</p>
+  <p>&nbsp;&nbsp;&nbsp; La gestion gestion de stock concerne par
+définition les produits stockés, cependant Laurux permet certaines
+actions, que nous verrons utltérieurement, sur les produits non stockés.<br>
+&nbsp;&nbsp;&nbsp; L'outil principal de la gestion de stock est la
+fiche produit qui offre un nombre important de données cocernant le
+stock.</p>
+  <p style="text-align: center;"><img style="width: 934px; height: 729px;" alt="Gestion1.png" src="Gestion1.png"><br>
+  </p>
+  
+  <p>&nbsp;&nbsp;&nbsp; En premier on notera la possibilité d'afficher
+soit les produits stockés, soit les non stockés, soit les produits
+suspendus, soit les produits en stock ou bien les produits épuisés à
+l'aide des boutons situés en haut d'écran. Cela permet un travail
+simplifié et rapide selon le type de recherche a effectuer. On pourra
+également afficher l'ensemble des produits.<br>
+&nbsp;&nbsp;&nbsp; Il est également possible d'attribuer des couleurs
+différentes selon la nature du produit. Ces couleurs se déterminent
+dans les préférences. Dans notre exemple, les lignes vertes
+représentent les produits en stock et les lignes blanches les produits
+épuisés c'est a dire les produits dont la quantité est &lt;= 0. Ainsi,
+d'un simple coup d'œil on peut connaître la nature des produits
+affichés à l'écran.<br>
+&nbsp;&nbsp;&nbsp; On va determiner si un produit est stocké ou pas directement dans la fiche du produit en activant le bouton <b><font color="#944794">"Stocké"</font></b>.<br>&nbsp;&nbsp;&nbsp;
+Si un produit est suspendu, c'est à dire qu'il est
+présent en stock mais qu'on ne peut plus le commander (pour X raisons,
+par exemple parce qu'il n'est plus fabriquer par le constructeur) il
+suffira de cocher le bouton <b><font color="#944794">"Suspendu"</font></b>. Ainsi, le produit pourra être vendu mais ne pourra plus être commandé chez les fournisseurs.<br>
+&nbsp;&nbsp;&nbsp; Dans cet écran on a des renseignements directs sur
+les quantités en stock ainsi que sur les quantités en commande
+fournisseurs. Il est possible, en cliquant sur le bouton de recherche
+d'ouvrir une fenêtre affichant les données des clients, les dates des
+commandes et les quantités en commande pour chaque commande client. Un
+clic sur une ligne de cette fenêtre va ouvrir le détail de la commande
+sélectionnée.<br>
+&nbsp;&nbsp;&nbsp; On aura un fonctionnement identique avec les commandes fournisseurs.<br>
+&nbsp;&nbsp;&nbsp; Un élement important de la fiche produit est la zone <b><font color="#944794">"Ref équivalente"</font></b>. Il y a une page spécifique pour la <a href="../Cequivalent.html">gestion des références équivalentes<br>
+  </a>&nbsp;&nbsp;&nbsp; <span style="color: black;">Notez que le nombre de références équivalentes n'est pas limité.</span></p>
+  <p>&nbsp;&nbsp;&nbsp; <a href="../Cequivalent.html"></a><span style="text-decoration: underline;"></span><br>
+  </p>
+</ul>
+
+<p align="center"><font color="#00ff00"><img style="width: 905px; height: 304px;" alt="Gestion2.png" src="Gestion2.png"><br>
+</font></p>
+<p style="text-align: left;"><font color="#00ff00">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  <span style="color: rgb(0, 47, 0);"><span style="color: rgb(0, 1, 0);">Dans la fiche article il y a un onglet</span> <span style="color: rgb(0, 1, 0);">nommé</span>  </span></font><b><font color="#944794">"Stock"</font></b> qui offre des renseignements intéressants concernant la gestion du stock. <span style="color: black;">On
+a les données concernant la dernière commande du produit. Son dernier
+prix d'achat, le fournisseur chez qui il a été commandé et la date
+d'achat.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+Sous ces renseignements on pourra saisir le stock mini et le stock maxi
+et le minimum de commande. Voyons à quoi vont nous servir ces
+données.&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+Le stock mini est le niveau de stock en deça duquel le produit passera
+dans les commandes automatiques. Le stock maxi est le niveau au delà
+duquel on ne pourra pas commnder.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+Exemple : Si notre produit affiché a une quantité = 5, il ne passera
+pas dans les commandes automatiques, s'il a une quantité = 1 alors la
+quantité commandée sera de 9. Nous verrons plus loin qu'il existe
+d'autres paramètres pour le calcul des quantités &amp; commander.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+Une autre donnée intéressante concerne les produits de remplacement.
+Les produits de remplacement sont des produits qui seront proposés à la
+vente lorsque le produit saisit est en rupture de stock. Notez que le
+nombre de produits de remplacement n'est pas limité.<br>
+</span></p>
+<p align="center"><font color="#00ff00">----------------------------------------------------------------------------------------------------------------------</font></p>
+
+
+<p><a href="Gestion_Stock.html"><font color="#0000ff">Retour
+en haut de la page</font></a></p>
+
+<p><a href="LauruxIndexParCategories.html"><font color="#0000ff">Retour
+a l'index</font></a><font color="#0000ff"> </font></p>
+
+</body></html>
