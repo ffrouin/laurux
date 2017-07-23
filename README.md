@@ -29,23 +29,23 @@ In case you miss the repo public key :
 
 enter the deb package builder directory
 
-	cd laurux/laurux_0.1
+	cd laurux/laurux_0.9
 
 ## 2. Download the latest release of Laurux
 
-	make download
+	make orig-pkg
 
 ## 3. Create your laurux deb file
 
 Install required system packages:
 	sudo apt-get install devscripts build-essential lintian
 
-	make package
+	make bin-release
 	cd ../
 
 ## 4. Install your new package
 
-	sudo dpkg -i laurux_0.1-1_all.deb
+	sudo dpkg -i laurux_0.9-1ubuntu1_i386.deb
 
 ## 5. Start Laurux
 
