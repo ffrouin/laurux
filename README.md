@@ -12,7 +12,7 @@ Any information about laurux (french) : [Laurux Website](http://www.laurux.fr)
 
 ## Connect our PPA to get laurux from your Ubuntu System
 
-### First connect to the gambas3 team ppa
+### First connect to the gambas3 team ppa and install gambas3
 
 	sudo add-apt-repository ppa:gambas-team/gambas3
 	sudo apt-get update
