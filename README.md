@@ -44,7 +44,7 @@ enter the deb package builder directory
 
 ### 2. Download the latest release of Laurux
 
-	cd laurux_0.13
+	cd laurux_0.14
 	make dl && make
 
 ### 3. Create your laurux deb file
@@ -54,7 +54,7 @@ enter the deb package builder directory
 
 ### 4. Install your new package
 
-	sudo dpkg -i laurux_0.13-1ubuntu1_i386.deb
+	sudo dpkg -i laurux_0.14-1ubuntu1_i386.deb
 
 ### 5. Start Laurux
 
