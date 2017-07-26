@@ -1,0 +1,23 @@
+Format: 1.8
+Date: Wed, 26 Jul 2017 16:23:52 +0200
+Source: laurux-pos
+Binary: laurux-pos
+Architecture: i386
+Version: 0.4-1ubuntu1
+Distribution: trusty
+Urgency: low
+Maintainer: Freddy Frouin <freddy@linuxtribe.fr>
+Changed-By: freddy <freddy@linuxtribe.fr>
+Description: 
+ laurux-pos - Manage your business - POS (french)
+Changes: 
+ laurux-pos (0.4-1ubuntu1) trusty; urgency=low
+ .
+   * Laurux Pos 3.24.0 released.
+Checksums-Sha1: 
+ 8965cd3d807a165d379afc0299b24db4dc2d17ea 4117814 laurux-pos_0.4-1ubuntu1_i386.deb
+Checksums-Sha256: 
+ c1293c8dabc9408135eefd7a0ae2894cad7420fadb48d229a04caa734a2455e0 4117814 laurux-pos_0.4-1ubuntu1_i386.deb
+Files: 
+ dc5c86de51003fe02d5d699048f86e81 4117814 x11 optional laurux-pos_0.4-1ubuntu1_i386.deb
+Original-Maintainer: Freddy Frouin <freddy@linuxtribe.fr>

@@ -1,0 +1,50 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 26 Jul 2017 16:19:05 +0200
+Source: lxpos
+Binary: lxpos
+Architecture: source
+Version: 0.4-1ubuntu1
+Distribution: trusty
+Urgency: low
+Maintainer: Freddy Frouin <freddy@linuxtribe.fr>
+Changed-By: freddy <freddy@linuxtribe.fr>
+Description: 
+ lxpos      - Manage your business - Autonomous POS (french)
+Changes: 
+ lxpos (0.4-1ubuntu1) trusty; urgency=low
+ .
+   * lxpos -v reported null data. automation bug fixed.
+Checksums-Sha1: 
+ 11b1b3c1a3c6390d75e3fe0f563f7e23999ced9c 1769 lxpos_0.4-1ubuntu1.dsc
+ d4a74d589564f74be0bd98935ac96a54fbf3961b 6746908 lxpos_0.4.orig.tar.gz
+ 6d2dbca10ac234685c8f7ce356d01c8b12facbad 2113 lxpos_0.4-1ubuntu1.debian.tar.gz
+Checksums-Sha256: 
+ 97f8fe9b8b166595aab78fe1ab5148fe7977c1753ee007e578de7cc736c6820c 1769 lxpos_0.4-1ubuntu1.dsc
+ b41c8f551cd618bb05f2a2bf9a9c078d7b2c9c43662795dfbb0ad7d730b7dd95 6746908 lxpos_0.4.orig.tar.gz
+ 3d9ff009ecd61e74f7c2a533896bb56a880751fa1880faaf68b624dbf6639291 2113 lxpos_0.4-1ubuntu1.debian.tar.gz
+Files: 
+ b7c2265e8af39e3aa6c63cb9c362387a 1769 x11 optional lxpos_0.4-1ubuntu1.dsc
+ a1fd37ee0cc7bb9a87c5094d39a31a49 6746908 x11 optional lxpos_0.4.orig.tar.gz
+ 672093e621fe273c61a8ac4aa8479485 2113 x11 optional lxpos_0.4-1ubuntu1.debian.tar.gz
+Original-Maintainer: Freddy Frouin <freddy@linuxtribe.fr>
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBAgAGBQJZeKVZAAoJEPXzj9NHy8BcEnkP/10/KsuWI1ElFNncKN1yaa50
+GUDmsokD69ar8/GnMiP5jj9GYPQiupuJPC/YAutWCtRrA92dS4CsRvofSj6bmMNr
+MDUwVmsB6jVMX15Cgzjrr/pm1DKBAmveob8/rtvmKULNRSxwNPy6Iqyfu8MRD0x/
+7S3P0qRitaZrB7BnYIlxpCZ2NryIrs2QE69b3TBwa9F80RJNalJCxSyVYFHL+MEm
+/vp3KGdYmPD0W+Q7oHKVkCPGGM22V2+jdu/poFPaHhzr8w0oqrpX0MTeJC1oMaPC
+gKbtnkyUuhjvkqWo282tR/xgLszwkV9kCDRc08Za9wgqfTZbU48GC91jhATmvnBa
+nopSoITEl1wzTBtq9GVSYttX7PH1bBhqUsNl7Nl929pgLnnKBjOba4Qgq1mhr48W
+1rmYLlDgyFpqEunlouoya9CC6QgS4RjG61XqyDSNyD6I1U/dPG9K5kNP7RQErS4Z
+FQ+SkSFB1SbZsLfltJI/3o1irL91CoJRDI+52hJoElH1RisemfvMu5D3CmXvcYQF
++6Wh/FWrSmcrPJmIO5hZt5hMq7x1xXUcgokYXJyKNUT5SVtcqskMFJSoUXYmsz3p
+ZcXINYixZ36c9ynWO93HSBuSwaDfv4CURQOVFNtG1tNhcYAr7dURVGQB3Hvwp7qD
+FWp2/xfDOcAhspXj7KjI
+=ZX8X
+-----END PGP SIGNATURE-----

@@ -1,0 +1,23 @@
+Format: 1.8
+Date: Wed, 26 Jul 2017 15:45:32 +0200
+Source: laurux
+Binary: laurux
+Architecture: i386
+Version: 0.15-1ubuntu1
+Distribution: trusty
+Urgency: low
+Maintainer: Freddy Frouin <freddy@linuxtribe.fr>
+Changed-By: freddy <freddy@linuxtribe.fr>
+Description: 
+ laurux     - Manage your business (french)
+Changes: 
+ laurux (0.15-1ubuntu1) trusty; urgency=low
+ .
+   * laurux 3.64.5 released.
+Checksums-Sha1: 
+ d67d6eab0c6d76a9164574715640e06e474d6c78 14925430 laurux_0.15-1ubuntu1_i386.deb
+Checksums-Sha256: 
+ f17c7dfa9cf2a18a01660fe4f0ba1d8f85e67985df2c5b8b46603b28de3bb29f 14925430 laurux_0.15-1ubuntu1_i386.deb
+Files: 
+ 5c38332583e8ef7bc5d0b6442ea6313e 14925430 x11 optional laurux_0.15-1ubuntu1_i386.deb
+Original-Maintainer: Freddy Frouin <freddy@linuxtribe.fr>

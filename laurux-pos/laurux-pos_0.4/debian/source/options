@@ -1,0 +1,3 @@
+tar-ignore = ".lang/*"
+tar-ignore = ".gambas/*"
+tar-ignore = ".git/*"

@@ -1,0 +1,68 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc -i -b
+dpkg-buildpackage: source package lxpos
+dpkg-buildpackage: source version 0.4-1ubuntu1
+dpkg-buildpackage: source distribution trusty
+dpkg-buildpackage: source changed by freddy <freddy@linuxtribe.fr>
+ dpkg-source -i --before-build lxpos_0.4
+dpkg-buildpackage: host architecture i386
+dpkg-source: info: using options from lxpos_0.4/debian/source/options: --tar-ignore=.lang/* --tar-ignore=.gambas/* --tar-ignore=.git/*
+ fakeroot debian/rules clean
+dh clean 
+   dh_testdir
+   dh_auto_clean
+make[1]: Entering directory `/home/freddy/Debian-Packages/trusty/lxpos/lxpos_0.4'
+rm LX.pos/LXPos.gambas
+rm -rf LX-pos/.gambas
+rm -rf LX-pos/.lang
+make[1]: Leaving directory `/home/freddy/Debian-Packages/trusty/lxpos/lxpos_0.4'
+   dh_clean
+ debian/rules build
+dh build 
+   dh_testdir
+   dh_auto_configure
+   dh_auto_build
+make[1]: Entering directory `/home/freddy/Debian-Packages/trusty/lxpos/lxpos_0.4'
+cd LX-Pos && gbc3 -agt && gba3 -o ../LX.pos/LXPos.gambas
+OK
+make[1]: Leaving directory `/home/freddy/Debian-Packages/trusty/lxpos/lxpos_0.4'
+   dh_auto_test
+ fakeroot debian/rules binary
+dh binary 
+   dh_testroot
+   dh_prep
+   dh_auto_install
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_installman
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: Depends field of package lxpos: unknown substitution variable ${shlibs:Depends}
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: warning: 'debian/lxpos/DEBIAN/control' contains user-defined field 'Original-Maintainer'
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+
+dpkg-deb: building package `lxpos' in `../lxpos_0.4-1ubuntu1_i386.deb'.
+ dpkg-genchanges -b >../lxpos_0.4-1ubuntu1_i386.changes
+dpkg-genchanges: binary-only upload - not including any source code
+ dpkg-source -i --after-build lxpos_0.4
+dpkg-source: info: using options from lxpos_0.4/debian/source/options: --tar-ignore=.lang/* --tar-ignore=.gambas/* --tar-ignore=.git/*
+dpkg-buildpackage: binary only upload (no source included)
+Now running lintian...
+E: lxpos: helper-templates-in-copyright
+W: lxpos: copyright-has-url-from-dh_make-boilerplate
+E: lxpos: copyright-contains-dh_make-todo-boilerplate
+W: lxpos: description-starts-with-leading-spaces
+W: lxpos: extended-description-line-too-long
+W: lxpos: extended-description-line-too-long
+W: lxpos: manpage-has-bad-whatis-entry usr/share/man/man1/lxpos.1.gz
+W: lxpos: executable-not-elf-or-script usr/share/LX.pos/caisse.png
+Finished running lintian.

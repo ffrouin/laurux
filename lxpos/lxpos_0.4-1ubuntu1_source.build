@@ -1,0 +1,41 @@
+ dpkg-buildpackage -rfakeroot -d -us -uc -S -sa
+dpkg-buildpackage: source package lxpos
+dpkg-buildpackage: source version 0.4-1ubuntu1
+dpkg-buildpackage: source distribution trusty
+dpkg-buildpackage: source changed by freddy <freddy@linuxtribe.fr>
+ dpkg-source --before-build lxpos_0.4
+dpkg-source: info: using options from lxpos_0.4/debian/source/options: --tar-ignore=.lang/* --tar-ignore=.gambas/* --tar-ignore=.git/*
+ fakeroot debian/rules clean
+dh clean 
+   dh_testdir
+   dh_auto_clean
+make[1]: Entering directory `/home/freddy/Debian-Packages/trusty/lxpos/lxpos_0.4'
+rm LX.pos/LXPos.gambas
+rm -rf LX-pos/.gambas
+rm -rf LX-pos/.lang
+make[1]: Leaving directory `/home/freddy/Debian-Packages/trusty/lxpos/lxpos_0.4'
+   dh_clean
+ dpkg-source -b lxpos_0.4
+dpkg-source: info: using options from lxpos_0.4/debian/source/options: --tar-ignore=.lang/* --tar-ignore=.gambas/* --tar-ignore=.git/*
+dpkg-source: warning: Version number suggests Ubuntu changes, but Maintainer: does not have Ubuntu address
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building lxpos using existing ./lxpos_0.4.orig.tar.gz
+dpkg-source: warning: ignoring deletion of file LX.pos/LXPos.gambas
+dpkg-source: info: building lxpos in lxpos_0.4-1ubuntu1.debian.tar.gz
+dpkg-source: info: building lxpos in lxpos_0.4-1ubuntu1.dsc
+ dpkg-genchanges -S -sa >../lxpos_0.4-1ubuntu1_source.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build lxpos_0.4
+dpkg-source: info: using options from lxpos_0.4/debian/source/options: --tar-ignore=.lang/* --tar-ignore=.gambas/* --tar-ignore=.git/*
+dpkg-buildpackage: full upload (original source is included)
+Now running lintian...
+W: lxpos source: debhelper-but-no-misc-depends lxpos
+W: lxpos source: package-needs-versioned-debhelper-build-depends 9
+W: lxpos source: out-of-date-standards-version 3.9.4 (current is 3.9.5)
+Finished running lintian.
+Now signing changes and any dsc files...
+ signfile lxpos_0.4-1ubuntu1.dsc 47CBC05C
+
+ signfile lxpos_0.4-1ubuntu1_source.changes 47CBC05C
+
+Successfully signed dsc and changes files
