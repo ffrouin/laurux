@@ -8,6 +8,11 @@ You can use this data to build a laurux package for your debian
 system. This package will allow you to enable multiuser usage of
 the laurux application originaly designed for a single user usage.
 
+Laurux is designed as 3 majors modules :
+	- Laurux : Commercial, Billing, Accounting, Stock,
+	- Laurux Pos : Connected POS (stock management),
+	- LXPos : An autonomous POS (no stock management / small shops or profesionnal individuals)
+
 Any information about laurux (french) : [Laurux Website](http://www.laurux.fr)
 
 ## Connect our PPA to get laurux from your Ubuntu System
@@ -22,7 +27,7 @@ Any information about laurux (french) : [Laurux Website](http://www.laurux.fr)
 
 	sudo add-apt-repository ppa:freddy-f/ppa
 	sudo apt-get update
-	sudo apt-get install laurux
+	sudo apt-get install laurux laurux-pos lxpos
 
 ## You prefer build your own debian package
 
@@ -36,11 +41,11 @@ Install required system packages:
 
 ### 1. Download this repository
 
-	git clone https://github.com/ffrouin/laurux
+	git clone https://github.com/ffrouin/laurux/laurux
 
 enter the deb package builder directory
 
-	cd laurux/
+	cd laurux
 
 ### 2. Download the latest release of Laurux
 
