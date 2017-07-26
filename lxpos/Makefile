@@ -1,5 +1,5 @@
-currentRelease = 0.3
-nextRelease = 0.4
+currentRelease = 0.4
+nextRelease = 0.5
 gpgkey=47CBC05C
 lxposRelease = $(shell wget --quiet https://github.com/Laurux/LX-Pos/raw/master/.project -O - | grep ^Version | sed -e s/Version=//)
 

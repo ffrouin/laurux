@@ -1,0 +1,23 @@
+Format: 1.8
+Date: Wed, 26 Jul 2017 16:50:47 +0200
+Source: lxpos
+Binary: lxpos
+Architecture: i386
+Version: 0.5-1ubuntu1
+Distribution: trusty
+Urgency: low
+Maintainer: Freddy Frouin <freddy@linuxtribe.fr>
+Changed-By: freddy <freddy@linuxtribe.fr>
+Description: 
+ lxpos      - Manage your business - Autonomous POS (french)
+Changes: 
+ lxpos (0.5-1ubuntu1) trusty; urgency=low
+ .
+   * lxpos 0.5 released.
+Checksums-Sha1: 
+ b9b32af043c1c3beeb085e927eb5d401287bc571 3866996 lxpos_0.5-1ubuntu1_i386.deb
+Checksums-Sha256: 
+ 81053d2751d957e4303066377bfc4c5184e0397a6de7280461e515e17c5c8c78 3866996 lxpos_0.5-1ubuntu1_i386.deb
+Files: 
+ 29d8a34a98f6bffc5b77e54b9e22bd34 3866996 x11 optional lxpos_0.5-1ubuntu1_i386.deb
+Original-Maintainer: Freddy Frouin <freddy@linuxtribe.fr>

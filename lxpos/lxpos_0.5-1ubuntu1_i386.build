@@ -1,30 +1,30 @@
  dpkg-buildpackage -rfakeroot -D -us -uc -i -b
 dpkg-buildpackage: source package lxpos
-dpkg-buildpackage: source version 0.4-1ubuntu1
+dpkg-buildpackage: source version 0.5-1ubuntu1
 dpkg-buildpackage: source distribution trusty
 dpkg-buildpackage: source changed by freddy <freddy@linuxtribe.fr>
- dpkg-source -i --before-build lxpos_0.4
+ dpkg-source -i --before-build lxpos_0.5
 dpkg-buildpackage: host architecture i386
-dpkg-source: info: using options from lxpos_0.4/debian/source/options: --tar-ignore=.lang/* --tar-ignore=.gambas/* --tar-ignore=.git/*
+dpkg-source: info: using options from lxpos_0.5/debian/source/options: --tar-ignore=.lang/* --tar-ignore=.gambas/* --tar-ignore=.git/*
  fakeroot debian/rules clean
 dh clean 
    dh_testdir
    dh_auto_clean
-make[1]: Entering directory `/home/freddy/Debian-Packages/trusty/lxpos/lxpos_0.4'
+make[1]: Entering directory `/home/freddy/Debian-Packages/trusty/lxpos/lxpos_0.5'
 rm LX.pos/LXPos.gambas
 rm -rf LX-pos/.gambas
 rm -rf LX-pos/.lang
-make[1]: Leaving directory `/home/freddy/Debian-Packages/trusty/lxpos/lxpos_0.4'
+make[1]: Leaving directory `/home/freddy/Debian-Packages/trusty/lxpos/lxpos_0.5'
    dh_clean
  debian/rules build
 dh build 
    dh_testdir
    dh_auto_configure
    dh_auto_build
-make[1]: Entering directory `/home/freddy/Debian-Packages/trusty/lxpos/lxpos_0.4'
+make[1]: Entering directory `/home/freddy/Debian-Packages/trusty/lxpos/lxpos_0.5'
 cd LX-Pos && gbc3 -agt && gba3 -o ../LX.pos/LXPos.gambas
 OK
-make[1]: Leaving directory `/home/freddy/Debian-Packages/trusty/lxpos/lxpos_0.4'
+make[1]: Leaving directory `/home/freddy/Debian-Packages/trusty/lxpos/lxpos_0.5'
    dh_auto_test
  fakeroot debian/rules binary
 dh binary 
@@ -50,11 +50,11 @@ dpkg-gencontrol: warning: Depends field of package lxpos: unknown substitution v
 dpkg-deb: warning: 'debian/lxpos/DEBIAN/control' contains user-defined field 'Original-Maintainer'
 dpkg-deb: warning: ignoring 1 warning about the control file(s)
 
-dpkg-deb: building package `lxpos' in `../lxpos_0.4-1ubuntu1_i386.deb'.
- dpkg-genchanges -b >../lxpos_0.4-1ubuntu1_i386.changes
+dpkg-deb: building package `lxpos' in `../lxpos_0.5-1ubuntu1_i386.deb'.
+ dpkg-genchanges -b >../lxpos_0.5-1ubuntu1_i386.changes
 dpkg-genchanges: binary-only upload - not including any source code
- dpkg-source -i --after-build lxpos_0.4
-dpkg-source: info: using options from lxpos_0.4/debian/source/options: --tar-ignore=.lang/* --tar-ignore=.gambas/* --tar-ignore=.git/*
+ dpkg-source -i --after-build lxpos_0.5
+dpkg-source: info: using options from lxpos_0.5/debian/source/options: --tar-ignore=.lang/* --tar-ignore=.gambas/* --tar-ignore=.git/*
 dpkg-buildpackage: binary only upload (no source included)
 Now running lintian...
 E: lxpos: helper-templates-in-copyright

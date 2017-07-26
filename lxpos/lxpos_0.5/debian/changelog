@@ -1,3 +1,9 @@
+lxpos (0.5-1ubuntu1) trusty; urgency=low
+
+  * lxpos 0.5 released.
+
+ -- freddy <freddy@linuxtribe.fr>  Wed, 26 Jul 2017 16:50:47 +0200
+
 lxpos (0.4-1ubuntu1) trusty; urgency=low
 
   * lxpos -v reported null data. automation bug fixed.
