@@ -2,10 +2,10 @@
 #
 # Object : script used to launch laurux
 # Author: Freddy Frouin <freddy.frouin@linuxtribe.fr>
-# Release : 0.2 - options
+# Release : 0.3 - options
 # Date: Wen Jul 26 08:43:46 2017
 
-release=0.2
+release=0.3
 lauruxrelease=3.24
 maintenance="Freddy Frouin <freddy@linuxtribe.fr>"
 
@@ -28,7 +28,7 @@ case "$1" in
 	echo
 	;;
 --version|-v)
-	echo "Laurux release for debian systems v$release"
+	echo "Laurux-Pos release for debian systems v$release"
 	echo " -> package includes Laurux.Pos $lauruxrelease"
 	echo " -> support : $maintenance"
 	;;
