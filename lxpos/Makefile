@@ -1,5 +1,5 @@
-currentRelease = 0.4
-nextRelease = 0.5
+currentRelease = 0.5
+nextRelease = 1.4.10
 gpgkey=47CBC05C
 lxposRelease = $(shell wget --quiet https://github.com/Laurux/LX-Pos/raw/master/.project -O - | grep ^Version | sed -e s/Version=//)
 
@@ -17,7 +17,7 @@ release-new:
 	@perl -pi -e "s/^lauruxrelease.+/lauruxrelease=$(lxposRelease)/" lxpos_$(nextRelease)/lxpos
 
 clean:
-	@rm *ubuntu*
+	@rm lxpos_$(nextRelease)-1_*
 	@rm *.orig.tar.*
 
 release-check:
@@ -44,5 +44,5 @@ release-bin:
 	cd lxpos_$(nextRelease) && debuild -i -b -us -uc
 
 release-ppa:
-	dput ppa:freddy-f/ppa lxpos_$(nextRelease)-1ubuntu1_source.changes
+	dput ppa:freddy-f/ppa lxpos_$(nextRelease)-1_source.changes
 	cp lxposSrcRelease.txt lxposBinRelease.txt

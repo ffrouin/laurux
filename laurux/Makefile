@@ -1,5 +1,5 @@
-currentRelease = 0.14
-nextRelease = 0.15
+currentRelease = 0.15
+nextRelease = 3.64.9
 gpgkey=47CBC05C
 lauruxRelease = $(shell wget --quiet https://github.com/Laurux/Laurux/raw/master/.project -O - | grep ^Version | sed -e s/Version=//)
 
@@ -17,7 +17,7 @@ release-new:
 	@perl -pi -e "s/^lauruxrelease.+/lauruxrelease=$(lauruxRelease)/" laurux_$(nextRelease)/laurux
 
 clean:
-	@rm *ubuntu*
+	@rm laurux_$(nextRelease)-1_*
 	@rm *.orig.tar.*
 
 release-check:
@@ -44,5 +44,5 @@ release-bin:
 	cd laurux_$(nextRelease) && debuild -i -b -us -uc
 
 release-ppa:
-	dput ppa:freddy-f/ppa laurux_$(nextRelease)-1ubuntu1_source.changes
+	dput ppa:freddy-f/ppa laurux_$(nextRelease)-1_source.changes
 	cp lauruxSrcRelease.txt lauruxBinRelease.txt

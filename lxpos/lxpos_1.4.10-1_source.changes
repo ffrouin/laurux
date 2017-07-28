@@ -1,0 +1,50 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Fri, 28 Jul 2017 08:29:05 +0200
+Source: lxpos
+Binary: lxpos
+Architecture: source
+Version: 1.4.10-1
+Distribution: trusty
+Urgency: low
+Maintainer: Freddy Frouin <freddy@linuxtribe.fr>
+Changed-By: freddy <freddy@linuxtribe.fr>
+Description: 
+ lxpos      - Manage your business - Autonomous POS (french)
+Changes: 
+ lxpos (1.4.10-1) trusty; urgency=low
+ .
+   * lxpos 1.4.10 released.
+Checksums-Sha1: 
+ 9927447120718a0bda251d96a144bca52d0ec501 1762 lxpos_1.4.10-1.dsc
+ 4809951b9270dd4000906e1d6ef7ef5a2b096b4b 6819439 lxpos_1.4.10.orig.tar.gz
+ cc7cf28b7f7cf103cb3be5bcc08c9278cde0dafd 2121 lxpos_1.4.10-1.debian.tar.gz
+Checksums-Sha256: 
+ 0539c96d499f3afae672ef0abf9c478ea5a316ac9499706630576405a50eea64 1762 lxpos_1.4.10-1.dsc
+ 73544703b0dc1d03f9085ba059b928b772431227e99cf9b3653c5d313f9eb133 6819439 lxpos_1.4.10.orig.tar.gz
+ 66699759c844c29bbfa07cd5bca0946fb1ca106446dca9686e3e5b6d17989721 2121 lxpos_1.4.10-1.debian.tar.gz
+Files: 
+ 0a3f2eab3d016da1c4097a6e0377a0fe 1762 x11 optional lxpos_1.4.10-1.dsc
+ 61c48112f657105a71c6fe8988b2f26c 6819439 x11 optional lxpos_1.4.10.orig.tar.gz
+ c85aa8a885fa203cab2c28f67ba08264 2121 x11 optional lxpos_1.4.10-1.debian.tar.gz
+Original-Maintainer: Freddy Frouin <freddy@linuxtribe.fr>
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBAgAGBQJZetnfAAoJEPXzj9NHy8BcnwkP+QFuRezcAx/6ZwSrLX7u9gJ2
+qEt8oJhyPJlJM/MBpocQdvXx/HyfuKfSRlGaeOaGdU0wnQi6QYfAQe/wRI0HT64Q
+IY5OWS4WnWv7dIA6AIvVAzZwZjhb8ixUY/o5TRY1Q/AU7ulElMB3b72CeyoeaZ06
+5xgsvfNIQhiKHgNKznDi0qFGS8V2BDAU/fe8LlZijpNDQAaPJmTt8GpNrjKSQBAL
++w9PoaIB7VA1o58PH9ANtHsONAsCDwzcvtHQvmIuuZtQbMKc5wv8JYemYb0OKqYI
+SQsvmpYWi68e5N+T0d3OhEP0Y648wB8PQdr5txaFzkUDmDZVzrG0B6DuEu3+TAD/
+xUdTCmbE2acUxKEXaw4nmqKmEcErnuBIv1RBq14zmKCU2xpwwZWx3t9Iv3trzz6m
+8PS15G/lf8va0yJyqniwKdgEqu1A8i/MBwFBZ6Ty4CksQrZ43R9CQRGm96DxFbCz
+bWcUtT4SLtRn3b4K3JiUFt6mSZ/jjOllIBQwJ1nCj6acnvBerx1Xrkb4tlT1/zf+
+yl1e6nExllcjAg60JqLhXzNPUgKhNOIRtNkyYwqXVfWoxs7SImd1IS6KySEXqHqN
+7eXsKwdo+2JDFm86MRpIYkGWT5+oHH80+ys4wVDEvnMRiRnAkqzXzivOyZlum7RP
+UX1EuJ/6s8Ut1Q/v3I8c
+=VN/2
+-----END PGP SIGNATURE-----

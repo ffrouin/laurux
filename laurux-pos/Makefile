@@ -1,5 +1,5 @@
-currentRelease = 0.3
-nextRelease = 0.4
+currentRelease = 0.4
+nextRelease = 3.24.2
 gpgkey=47CBC05C
 lauruxPosRelease = $(shell wget --quiet https://github.com/Laurux/Laurux-Pos/raw/master/.project -O - | grep ^Version | sed -e s/Version=//)
 
@@ -17,7 +17,7 @@ release-new:
 	@perl -pi -e "s/^lauruxrelease.+/lauruxrelease=$(lauruxPosRelease)/" laurux-pos_$(nextRelease)/laurux-pos
 
 clean:
-	@rm *ubuntu*
+	@rm laurux-pos_$(nextRelease)-1_*
 	@rm *.orig.tar.*
 
 release-check:
@@ -44,5 +44,5 @@ release-bin:
 	cd laurux-pos_$(nextRelease) && debuild -i -b -us -uc
 
 release-ppa:
-	dput ppa:freddy-f/ppa laurux-pos_$(nextRelease)-1ubuntu1_source.changes
+	dput ppa:freddy-f/ppa laurux-pos_$(nextRelease)-1_source.changes
 	cp laurux-posSrcRelease.txt laurux-posBinRelease.txt
