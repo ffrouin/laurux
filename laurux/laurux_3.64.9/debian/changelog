@@ -1,3 +1,15 @@
+laurux (3.64.9-3) trusty; urgency=low
+
+  * broken depdencies for ppc64el arch
+
+ -- freddy <freddy@linuxtribe.fr>  Wed, 02 Aug 2017 09:38:40 +0200
+
+laurux (3.64.9-2) trusty; urgency=low
+
+  * add applicative dependencies for laurux.
+
+ -- freddy <freddy@linuxtribe.fr>  Wed, 02 Aug 2017 09:13:10 +0200
+
 laurux (3.64.9-1) trusty; urgency=low
 
   * laurux 3.64.9 released.
