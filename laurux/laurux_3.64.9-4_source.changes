@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 02 Aug 2017 10:13:55 +0200
+Source: laurux
+Binary: laurux
+Architecture: source
+Version: 3.64.9-4
+Distribution: trusty
+Urgency: low
+Maintainer: Freddy Frouin <freddy@linuxtribe.fr>
+Changed-By: freddy <freddy@linuxtribe.fr>
+Description: 
+ laurux     - Manage your business (french)
+Changes: 
+ laurux (3.64.9-4) trusty; urgency=low
+ .
+   * gambas runtime dependency.
+Checksums-Sha1: 
+ a823b9db74a3c9269afc9f38cf8119f53a97f911 1777 laurux_3.64.9-4.dsc
+ 02a477352babb1bd12d1f3b3a6364d0fdaec05c8 10433 laurux_3.64.9-4.debian.tar.gz
+Checksums-Sha256: 
+ e4c3952da9f2f66657528e28cf11fe5427e3dd51204d3744b93099073437df7b 1777 laurux_3.64.9-4.dsc
+ cc270fde4bd2aeaea283d3cff1d2a94edfb40cfd4fb2265109ff88fb7abcb612 10433 laurux_3.64.9-4.debian.tar.gz
+Files: 
+ c389d812ae481c2e23d5f98da3c961b4 1777 x11 optional laurux_3.64.9-4.dsc
+ 4ceb06bac7aa02cc4e79b322db0cb34b 10433 x11 optional laurux_3.64.9-4.debian.tar.gz
+Original-Maintainer: Freddy Frouin <freddy@linuxtribe.fr>
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBAgAGBQJZgYoaAAoJEPXzj9NHy8BcLf8P/jCmE06soSqngvHWAc9bkeFv
+1CdPIF+zCfK7WIUviYTmzZm4mfPM6vnuSYs7Kl1Bl5u3b+wUhqVtDX8Oql2p/cL7
+ftvxHffBYAvUWKcJvCax2ccPAAcdu/FJ1jQNXojEkvepn1tQusy9cOmGTLjFXgKi
++YpN572nCkcbouNT1p5Eghd9CmQEPlXTBYIIVEjVAMK3Y31hIlF/ujTEO8lEW9dy
+kp5N7OIph9OFb8ZCLRY1lrnj5z9wdjX2DBLx5xPWNKPZ9uKRoqJuVT+nUTVHUm56
+m+hBJE6uFHaNYl14TJcRxD4PFgVurFqeJ6JFtEw3kHG47iDik0dKzgrIAaZ1LGwk
+z/bGPuBgA6r2cnkBvy/Dv25ittbztRXQBlltvbZyZOcR0xpTof6qFcvFmh062MM9
+GYoDZgCX76RsErbv6YOylxC6xumGddhV+Z7mmMWxuURZYshnrIgBiIIGsNbiRMtL
+Zih+3E2IVDK7wYPeduHnD7fGVIN3KeqwEm4X/1gLrvWDw8hHCvw85LNFxPpjoSMf
+0rcWXbhLM2nR12CCF1crgBqjJGLu+pmikmMChAgqO6opCcqwX6a6/L09j0wq53bg
+zd3SzOJsVo6WMQw1KbDbjyFmqSOqHTioX8I5oVXBnVFxWC7q7tJxH5u1m8ut3eJU
+61+ejVg7pemyoiYjazz2
+=u2uR
+-----END PGP SIGNATURE-----
