@@ -1,3 +1,9 @@
+laurux (3.64.9-4) trusty; urgency=low
+
+  * gambas runtime dependency.
+
+ -- freddy <freddy@linuxtribe.fr>  Wed, 02 Aug 2017 10:13:55 +0200
+
 laurux (3.64.9-3) trusty; urgency=low
 
   * broken depdencies for ppc64el arch

@@ -11,7 +11,7 @@ Homepage: http://www.laurux.fr
 
 Package: laurux
 Architecture: any
-Depends: gambas3, gambas3-gb-desktop-x11, qt4-qtconfig, curl, libcurl3, zlib1g, libc6, ${shlibs:Depends}
+Depends: gambas3-runtime, gambas3, gambas3-gb-desktop-x11, qt4-qtconfig, curl, libcurl3, zlib1g, libc6, ${shlibs:Depends}
 Description: Manage your business (french)
   Laurux is an application designed for french companies or professional individuals that need an application to manage their business : commercial, billing, french accounting, point of sale.
   This package will allow you to enable multiuser usage of the laurux application originaly designed for a single user usage.
