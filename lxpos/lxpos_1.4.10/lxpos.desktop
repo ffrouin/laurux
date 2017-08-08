@@ -1,0 +1,6 @@
+[Desktop Entry]
+	Name=LX POS
+	Exec=lxpos
+	Icon=/usr/share/LX.pos/caisse.png
+	Type=Application
+	Categories=Office;
