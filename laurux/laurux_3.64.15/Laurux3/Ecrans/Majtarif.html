@@ -1,0 +1,202 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+
+
+
+
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=iso-8859-15"><title>Laurux . Création et maj des produits</title>
+
+<meta name="CREATED" content="20040404;10240700">
+<meta name="CHANGED" content="20040404;10390700">
+<meta name="robots" content="noindex"></head><body style="background-image: url(sand.jpg);" link="#0000ff" vlink="#800080">
+<table style="page-break-before: always;" cellpadding="2" cellspacing="0" width="100%">
+<tbody>
+<tr valign="bottom">
+<td rowspan="2">
+<h1 align="left">~ Comptabilité et Facturation
+Laurux ~ </h1>
+</td>
+<td><br>
+</td>
+<td><br>
+</td>
+</tr>
+<tr valign="bottom">
+<td><br>
+</td>
+<td>
+<p align="left"></p>
+      <br>
+</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<p align="center"></p>
+<h2><strong>1- Paramétrage des fichiers de définition.</strong></h2>
+</ul>
+<p></p>
+<div style="text-align: center;"><img style="width: 846px; height: 697px;" alt="Majtarif.png" src="Majtarif.png"><br>
+</div>
+<p style="text-align: left;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; L'écran de paramétrage des fichiers de
+définition (Stock ==&gt; Tarifs ==&gt; Table des fichiers d'import)
+utilisés pour les mises à jour des tarifs comporte deux onglets.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Le premier
+onglet servira a créer les nouveaux fichiers et a visualiser ou
+modifier les fichiers existants.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Pour créer un
+nouveau fichier de définition on cliquera sur le bouton "<font color="#800080">Créer</font>",
+puis on saisira le code du fournisseur ainsi que celui de la famille.
+Ces deux données seront utilisées si elles n'existent pas dans le
+fichier tarif. On saisira ensuite le chemin du fichier tarif puis le
+type de séparateurs des champs dudit fichier. Soit un séparateur, en
+général un ; (point virgule) soit des champs fixes.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Quelques
+lignes du fichier tarif s'affichent dans la fenêtre, ce qui vous permet
+de contrôler la structure du fichier.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  Pour supprimer un fichier de définition on cliquera sur le bouton "<font color="#800080">Supprimer</font>".<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Pour
+enregistrer les données du premier onglet on cliqura sur le bouton "<font color="#800080">Enregistrer</font>"</p>
+<p style="text-align: left;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; NB : Les fichiers tarifs fournis par les
+fournisseurs sont des fichiers de type texte ayant généralement
+l'extension .txt ou .csv. Si vous recvez un fichier dans un format
+spécifique, par exemple un fichier généré par un tableur, il faudra le
+transformer en fichier texte car Laurux ne sait pas travailler avec ce
+type d'enregistrement.<br>
+</p>
+<p style="text-align: center;"><img style="width: 846px; height: 697px;" alt="Majtarif2.png" src="Majtarif2.png"><br>
+</p>
+<p style="text-align: left;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; Le deuxième onglet va servir a faire une
+concordance entre chaque zone du fichier&nbsp; avec une zone de la
+table des articles de Laurux.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; En premier on
+va saisir la zone Laurux à l'aide du combobox qui contient les champs
+de Laurux puis on va donner la position correspondante à l'intérieur du
+fichier tarif. La donnée&nbsp; du champs séléctionné s'affichera dans
+une ligne au-dessous afin de contrôler si la saisie est correcte. Si
+tout est bon on cliquera sur le bouton "<font color="#800080">Ajouter</font>" pour mémoriser notre saisie et on procédera ainsi pour chaque champs du fichier tarif.</p>
+<p style="text-align: left;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; Pour supprimer une ligne soit on la
+sélectionne et on appuie sur la touche" <font color="#800080">SUPPR</font>" du clavier, soit on la sélectionne et on clique sur le bouton "<font color="#800080">Retirer</font>".<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  Pour remettre toute la liste à blanc on cliquera sur le bouton "<font color="#800080">Effacer la liste</font>".</p>
+<p style="text-align: left;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  NB : Le fait de cliquer sur le bouton "<font color="#800080">Ajouter</font>" enregistrera la nouvelle ligne dans la base.<br>
+&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  <br>
+</p>
+<h2><strong><strong>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 2- Mise à jour des prix et des zones de la fiche article.<br>
+</strong></strong></h2>
+<p align="center"><img style="width: 958px; height: 777px;" alt="Majtarif3.png" src="Majtarif3.png"><br>
+</p>
+
+<p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <br>
+</p>
+<p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Ce programme (Stock ==&gt; Tarifs
+==&gt; Import et mise à jour article) va servir a créer les nouveaux
+articles, a mettre à jour les prix des produits et a la mise à jour de
+certaines zones des fiches produits.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; En premier on saisira le fichier
+de définition avec lequel on souhaite travailler. Tous les
+renseignements fournis lors de la création du fichier vont s'afficher
+(Nom et chemin du fichier tarif, fournisseur et famille ainsi que les
+séparateurs utilisés par le fichier tarif.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Le coefficient de vente, le taux
+de remise ainsi que le code tva qui s'affichent sont des données issues
+de la famille et seront utilisés si le fichier tarif ne les possèdent
+pas.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Si un fournisseur étranger vous fournit
+un tarif dans une devise autre que l'Euro, vous pouvez utiliser la zone
+"<font color="#800080">Taux de change</font>". Le programme recalculera les prix en utilisant cette valeur.<br>
+</p>
+<p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Il faudra ensuite saisir le
+type de mise à jour a effectuer. Soit on fait une mise à jour de la
+zone future base tarif de la fiche article, soit on fait une mise a
+jour immédiate. La première solution permet de sortir les étiquettes et
+de préparer le magasin avant d'effectuer la mise à jour des prix (Stock
+==&gt; Tarifs ==&gt; Future base tarif). Cette solution est préférable
+dans le cas d'un magasin de détail ou les prix sont affichés.</p>
+<p>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; Si le fournisseur vous donne un tarif en prix brut
+ou en prix net, il faudra cocher le bouton had hoc. <br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Si
+aucune remise n'est renseignée dans le fichier tarif alors le programme
+utilisera la remise de la famille pour calculer le PAHT brut ou le PAHT
+net. Ce sont également le coefficient et la Tva issus de la famille qui
+seront utilisés pour calculer les prix de ventes HT et TTC des produits.</p>
+<p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+Si vous ne souhaitez pas faire de mise à jour de la désignation alors
+il faudra décocher le bouton "<font color="#800080">Maj désignation</font>".<br>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; Si vous ne souhaitez pas mettre à jour le code barre
+alors il faudra décocher le bouton "<font color="#800080">Maj code barre</font>".<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Si la gestion du prix de vente
+conseillé est activée et si vous ne souhaitez pas mettre à jour cette
+zone
+alors il faudra décocher le bouton "<font color="#800080">Maj prix de vente conseillé</font>".<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Si le fournisseur vous remet un fichier contenant
+votre remise alors il faudra décocher le bouton "<font color="#800080">Utilisation de la remise famille</font>".<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Enfin, si
+vous souhaitez faire une mise à jour des prix sans créer les nouvelles
+références alors il faudra décocher le bouton "<font color="#800080">Création des produits manquants</font>".<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  Note concernant la création des nouveaux produits.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Si le fichier tarif ne contient
+pas de zone code article alors la codification des nouveaux produits va
+suivre le schéma ci-dessous.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Si le dernier code existant dans
+la table des produits est numérique alors la codification sera
+incrémentielle. <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Ex : Dernier code créé 101, alors la création des nouveaux articles commencera à 102.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Si le dernier code est
+alphanumérique alors&nbsp; un message d'alerte
+préviendra l'utilisateur et lui demandera de choisir entre trois propositions.</p>
+<p style="text-align: center;"><img style="width: 522px; height: 251px;" alt="Majtarif4.png" src="Majtarif4.png"><br>
+</p>
+<p>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Si la base est vierge alors la
+codification débutera à 10000.&nbsp; <br>
+</p>
+<p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Si le fichier tarif contient
+une zone ayant une relation avec la zone code article de Laurux alors
+les nouveaux produits seront créés avec ce code.<br>
+</p>
+
+<p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  Le programme effectue les contrôles suivants avant toute création ou mise à jour : <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Vérification de l'existence du
+code barre. Si le code barre n'existe pas alors le programme controlera
+l'existence de la référence fournisseur pour le fournisseur
+selectionné. Si la référence fournisseur n'existe pas alors le produit
+sera créé.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Si le code barre ou si la
+référence fournisseur existe déjà alors le programme effectuera les
+mise à jour demandées.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  <br>
+</p>
+<p>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span style="font-weight: bold;"> Note concernant la mise à jour des codes barres.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  </span>Lors de la création d'un
+produit, le code barre est renseigné dans la zone "<font color="#800080">Code barre</font>" de la
+fiche du produit, il devient donc le code barre principal c'est à dire
+celui qui apparait lors d'un appel de la fiche. Ce code barre est
+également créé dans la table des codes barres.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Lors d'une mise à jour, c'est la
+table des codes barres qui sera mouvementée mais pas la fiche du
+produit, ainsi le code barre principal ne sera donc pas affecté.<br>
+ </p>
+
+<h2><strong><strong><strong><strong>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 3- Mise à jour des codes équivalents ou codes barres.</strong></strong></strong></strong></h2>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Dans le panel "<font color="#800080">Type maj</font>" , si on sélectionne le bouton "<font color="#800080">Maj zones</font>"
+alors le programme fera une mise à jour soit des codes équivalents ou
+soit des codes barres selon la manière dont a été fait le fichier de
+définition.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Ce fichier de
+définition devra donc contenir deux zones. Code produit et code
+équivalent ou code barre.
+<p align="center">
+</p>
+
+<p style="text-align: center;"><font color="#00ff00">----------------------------------------------------------------------------------------------------------------------</font>
+</p>
+<p style="text-align: left;"><a href="Majtarif.html"><font color="#0000ff">Retour
+en haut de la page</font></a></p>
+<p style="text-align: left;"><font color="#0000ff"><a href="LauruxIndexParCategories.html">Retour a l'index</a>
+</font> </p>
+<p></p>
+</body></html>

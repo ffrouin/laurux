@@ -1,0 +1,23 @@
+Format: 1.8
+Date: Thu, 10 Aug 2017 11:52:33 +0200
+Source: laurux
+Binary: laurux
+Architecture: i386
+Version: 3.64.15-1
+Distribution: trusty
+Urgency: low
+Maintainer: Freddy Frouin <freddy@linuxtribe.fr>
+Changed-By: freddy <freddy@linuxtribe.fr>
+Description: 
+ laurux     - Manage your business (french)
+Changes: 
+ laurux (3.64.15-1) trusty; urgency=low
+ .
+   * Laurux 3.64.15 released.
+Checksums-Sha1: 
+ a206c7e406d132d184cdf840ec106a2b3d89db60 14922392 laurux_3.64.15-1_i386.deb
+Checksums-Sha256: 
+ 4ae77d2389005cc5785778f300c12331f8de4a42ec07bcfdade02eb60fa3584a 14922392 laurux_3.64.15-1_i386.deb
+Files: 
+ 63f71eefcdd9a65b95065cb3bc5262b2 14922392 x11 optional laurux_3.64.15-1_i386.deb
+Original-Maintainer: Freddy Frouin <freddy@linuxtribe.fr>

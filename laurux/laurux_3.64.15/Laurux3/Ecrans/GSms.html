@@ -1,0 +1,205 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="fr-fr"><head><title>Laurux . Gestion des SMS</title></head><body style="background-image: url(sand.jpg);" link="#0000ff" vlink="#800080">
+<table class="header" cellspacing="0" width="100%">
+
+  <tbody>
+    <tr valign="bottom">
+      <td rowspan="2" class="header" align="left">
+      <h1>~ Comptabilité et facturation Laurux ~ </h1>
+      </td>
+      <td class="header" align="right"><br>
+      </td>
+    </tr>
+    <tr valign="bottom">
+      <td class="header" align="left">
+      <p><img src="Larus.gif" height="80" width="70"></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3><a name="Install"></a>Généralités sur la gestion des SMS avec
+Laurux.</h3>
+
+<ul>
+
+  <p>Laurux permet l'envoi de SMS a partir des fiches clients,
+fournisseurs, par le menu Impression de la facturation et enfin par
+deux entrées distinctes du menu général.</p>
+  <p>Deux possibilités : Soit on passe par une clé Huawei ou un
+téléphone Nokia, soit on passe par un fournisseur de SMS pro.<br>
+La première solution est d'une nature assez lourde a mettre en &#339;uvre et
+ne fonctionne que sur le poste ou est branché la clé. La seconde
+solution est plus simple et elle fonctionne sur l'ensemble des postes
+puisque Laurux effectue une simple requète htttp à l'aide de Curl.<br>
+  </p>
+  <p><big><span style="font-weight: bold;">1- Clé ou téléphone</span></big><br>
+  </p>
+  <p>Les tests ont été fait avec un téléphone Nokia 208 et une clé
+Huawei
+e303.<br>
+NB: Les téléphones Nokia se montent automatiquement lors de leur
+branchement à l'aide d'un cable USB donc le paramétrage ci-dessous ne
+concerne que les clés Huawei e303.<br>
+  </p>
+  <p>Vous trouverez ci dessous comment faire les paramétrages
+nécessaires.<br>
+  </p>
+  <ul>
+    <li><span style="text-decoration: underline; font-weight: bold;">Installation
+et configuration des cles 3g Huawei e303</span><br>
+      <br>
+1- Désactiver la demande du code PIN de la carte SIM (à l'aide d'un
+téléphone par exemple).<br>
+      <br>
+2- Brancher la clé, attendre quelques secondes puis dans un terminal
+taper lsusb. On devrait avoir une ligne comme celle-ci : Bus 001 Device
+005: ID 12d1:14dc Huawei Technologies Co., Ltd.<br>
+Noter l'ID (12d1:14dc dans notre exemple) ce sera le DefaultProduct.<br>
+      <br>
+3- Rebooter en laissant la clé branchée puis refaire lsusb dans un
+terminal. Noter l'ID ce sera le TargetProduct<br>
+      <br>
+4- Installer Usb_Modeswitch à l'aide de votre gestionnaire de logiciels
+préféré.<br>
+      <br>
+5- Créer ou éditer le fichier /etc&#8725;usb_modeswitch.d/12d1:14dc avec les
+données suivantes :<br>
+#Huawei E303<br>
+DefaultVendor= 0x12d1<br>
+DefaultProduct= 0x14dc<br>
+TargetVendor= 0x12d1<br>
+TargetProduct= 0x14dc<br>
+MessageContent="55534243123456780000000000000011062000000100000000000000000000"<br>
+      <br>
+6- Rebooter avec la clé<br>
+      <br>
+7- Dans un terminal lsusb vous devriez avoir la ligne suivante :<br>
+Bus 001 Device 016: ID 12d1:1001 Huawei Technologies Co., Ltd.
+E169/E620/E800 HSDPA Modem<br>
+      <br>
+8- dmesg devrait donner :<br>
+scsi 4:0:0:0: Direct-Access&nbsp;&nbsp;&nbsp;&nbsp; HUAWEI&nbsp;&nbsp;
+TF CARD Storage&nbsp; 2.31 PQ: 0 ANSI: 2<br>
+USB Serial support registered for GSM modem (1-port)<br>
+option 1-8:1.0: GSM modem (1-port) converter detected<br>
+usb 1-8: GSM modem (1-port) converter now attached to ttyUSB0<br>
+option 1-8:1.1: GSM modem (1-port) converter detected<br>
+usb 1-8: GSM modem (1-port) converter now attached to ttyUSB1<br>
+option 1-8:1.2: GSM modem (1-port) converter detected<br>
+usb 1-8: GSM modem (1-port) converter now attached to ttyUSB2<br>
+init: usb-modeswitch-upstart main process (27001) terminated with
+status 1<br>
+usb 1-8: new high-speed USB device number 16 using ehci_hcd<br>
+option 1-8:1.0: GSM modem (1-port) converter detected<br>
+usb 1-8: GSM modem (1-port) converter now attached to ttyUSB0<br>
+option 1-8:1.1: GSM modem (1-port) converter detected<br>
+usb 1-8: GSM modem (1-port) converter now attached to ttyUSB1<br>
+option 1-8:1.2: GSM modem (1-port) converter detected<br>
+usb 1-8: GSM modem (1-port) converter now attached to ttyUSB2<br>
+      <br>
+    </li>
+    <li><span style="text-decoration: underline; font-weight: bold;">Automatiser
+le montage de la clé<br>
+      </span>Afin que la clé soit automatiquement montée lors de
+l'allumage de la machine créer ou éditer le fichier
+/etc/udev/rules.d/15-Huawei.rules et mettre les données suivantes :<br>
+SUBSYSTEM=="usb", ATTRS{idProduct}=="14dc", ATTRS{idVendor}=="12d1",
+RUN+="/usr/sbin/usb_modeswitch -v 0x12d1 -p 0x14dc -V 0x12d1 -P 0x1001
+-M 55534243123456780000000000000011062000000100000000000000000000 -s 10
+-W"<br>
+      <br>
+    </li>
+  </ul>
+  <ul>
+    <li><span style="text-decoration: underline; font-weight: bold;">Gammu
+et Wammu</span><br>
+Laurux utilise Gammu pour l'envoi des SMS. Wammu est une interface
+graphique de Gammu et va nous servir a paramétrer Gammu.<br>
+Installer Gammu et Wammu à l'aide de votre gestionnaire de logiciels
+préféré.<br>
+      <br>
+Lancer Wammu (Accessoires), aller dans l'assistant de recherche du
+téléphone.<br>
+Choisir "Configuration assistée", puis "Cable USB" <br>
+Pour les clés Huawei choisir "Aucun des précédents", puis "Utilise les
+commandes AT",puis en port de connexion choisir /dev/ttyUSB0.<br>
+Pour les téléphones Nokia choisir "Téléphone Nokia", puis "Utilise les
+commandes AT", puis "Commande AT générique sur ligne série ou son
+émulation", puis en port de connexion choisir /dev/ttyACM0.<br>
+Pour voir si tout est correct aller en "Téléphone" puis "Se connecter".
+Si pas d'erreur la gestion des SMS devrait fonctionner sous Laurux.
+Déconnecter le téléphone et quitter Wammu.<big><span style="font-weight: bold;"><br>
+      </span></big></li>
+  </ul>
+  <big><br>
+  </big><big><span style="font-weight: bold;">2- Fournisseur
+SMS Pro<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </span><small>Il existe beaucoup
+de fournisseur d'envoi de SMS pro. Spot-Hit a été choisi pour sa
+simplicité. Il est possible d'ajouter d'autres fournisseurs aux choix
+proposés par Laurux, il suffit de donner les modalités de connexion sur
+le forum laurux.fr.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Nous tenons a préciser que
+Laurux n'a aucun interêt dans cette proposition et n'a aucun lien avec
+cette société..<br>
+  <span style="font-weight: bold;"><br>
+  </span> </small><span style="font-weight: bold;"></span></big>
+  <ul>
+    <li><span style="font-weight: bold; text-decoration: underline;">Pré-requis</span><br>
+Laurux utilise Curl pour l'envoi des SMS. En principe Curl est installé
+par défaut dans le système. Vérifiez cependant qu'il soit bien présent
+et procédez à son installation si besoin en copiant les lignes suivantes dans un terminal :<br>
+sudo apt-get install curl libc6 libcurl3 zlib1g<big><code><br>
+      <br>
+      </code></big></li>
+    <li><span style="text-decoration: underline; font-weight: bold;">Ouverture
+de compte</span><br>
+Il convient en premier d'ouvrir un compte sur le site de&nbsp;<a href="http://www.spot-hit.fr/">http://www.spot-hit.fr/</a>&nbsp; <br>
+2 options sont proposées par le site : Prémium et low cost. La première
+permet l'utilisation de mots longs c'est a dire qu'il est possible
+d'envoyer des SMS de plus de 160 caractères, elle permet aussi l'envoi
+personnalisé, l'envoi à l'étranger et un délai d'envoi réduit. Vous
+pouvez donc acheter des SMS premium pour les envois uniques qui dans ce
+cas seront expédiés dans un temps très court (moins d'une minute) et
+des Lowcost pour les envois en masse (plus d'une minute).<br>
+Lorsque vous avez ouvert votre compte et acheté vos SMS, il faudra
+aller dans les paramètres de votre compte puis dans l'onglet API afin
+de récupérer la clé qui vous a été attribuée. cette clé devra ensuite
+être copiée dans les préférences de Laurux (zone clé API).<br>
+      <br>
+    </li>
+  </ul>
+  <big><span style="font-weight: bold;">3- Utilisation</span></big><br>
+  <ul>
+    <br>
+    <li><span style="font-weight: bold; text-decoration: underline;">Sous Laurux</span><br>
+      <br>
+Voir la page consacrée à ce sujet <a href="Sms.html">Utilisation des
+SMS sous Laurux</a><br>
+      <br>
+    </li>
+    <li><span style="font-weight: bold; text-decoration: underline;">Sources</span><br>
+L'installation et le paramétrage des clés Huawei a été possible grâce
+au site suivant :<br>
+http://www.draisberghof.de/usb_modeswitch/<br>
+    </li>
+  </ul>
+  <big> </big>
+  <div style="text-align: center;"><big> </big>
+  <div style="text-align: left;"><span style="font-style: italic;"><big>
+  </big></span><span style="font-weight: bold;"><big> </big></span><span style="font-weight: bold;"><span style="font-weight: bold;"></span></span></div>
+  <big> </big>
+  <p align="center"><big><font color="#00ff00">----------------------------------------------------------------------------------------------------------------------</font></big></p>
+  <big> <br>
+  <br>
+  </big>
+  <p><big><a href="GSms.html"><font color="#0000ff">Retour
+en haut de la
+page</font></a></big></p>
+  <big> <br>
+  </big></div>
+  
+</ul>
+
+</body></html>
