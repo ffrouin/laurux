@@ -1,0 +1,50 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Fri, 11 Aug 2017 17:43:55 +0200
+Source: laurux
+Binary: laurux
+Architecture: source
+Version: 3.64.17-1
+Distribution: trusty
+Urgency: low
+Maintainer: Freddy Frouin <freddy@linuxtribe.fr>
+Changed-By: freddy <freddy@linuxtribe.fr>
+Description: 
+ laurux     - Manage your business (french)
+Changes: 
+ laurux (3.64.17-1) trusty; urgency=low
+ .
+   * Laurux 3.64.17 released.
+Checksums-Sha1: 
+ 7c2be0365bd587fb998327144c24beabd3a73c16 1784 laurux_3.64.17-1.dsc
+ 84de551acd7ed7f86d4ec07a4dc75ec6a115134e 27386740 laurux_3.64.17.orig.tar.gz
+ cdaf0ebf0ac0f03bf836bb4eca47e2dbed5243d5 10563 laurux_3.64.17-1.debian.tar.gz
+Checksums-Sha256: 
+ f43c9ff7e2400c3a1f915736987fc3c20bd7afe55835d0a7f2fe763dc30fda2f 1784 laurux_3.64.17-1.dsc
+ 6f610ae1fac9592a9afba2c49b41774eba369e1f54b5449a1ceec6248d155268 27386740 laurux_3.64.17.orig.tar.gz
+ 18e549cd20c5384c8fb6a3908ece41dc060c9dd0bef867fe17937b18fe30bc5e 10563 laurux_3.64.17-1.debian.tar.gz
+Files: 
+ 43fa743941db28b2ae686499b873e4b6 1784 x11 optional laurux_3.64.17-1.dsc
+ 9a76d6f544b2a7a6c4092b46b0511bc6 27386740 x11 optional laurux_3.64.17.orig.tar.gz
+ 389fe879d1471668f944e4c13363813d 10563 x11 optional laurux_3.64.17-1.debian.tar.gz
+Original-Maintainer: Freddy Frouin <freddy@linuxtribe.fr>
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBAgAGBQJZjdFqAAoJEPXzj9NHy8BcvkkP/2nPOuMnUM/CW+bBy1V9iXkh
+WQf0etINMEP1nXJSderv6XNvJm6UHYctZap8sOp5S+VZOgZOKmUPXOehsCbEMRrD
+chtr2fFVu53MeR41sYs7rITbiSc5pniFywKfyQWbzkO8Txpvb7C8qwb9rqmyEzkE
+IGhZMEGHVYFBFAZQmC2vu8DqyZ41hXmDW80AmNc82eOUw9ORR0YPMXuuz2yy+t1D
+E6IAsTDqe5cVtGEDrrTiBq4kvx5yfurOFzkeU+tPPHM1/hFAIdM9bpF8I/QUsCE8
+tHgwPiA8nb31ieA2JPsll2liEgjqj3V/v1l9IhazqodUV6vHBKqG38fzdnl+DAkv
+e6lKh/wahcbikC5JYRP1pTYLhsatV0SyOAZSMYhZYY1wSAOAnuA6NY8mQ0oVchHW
+dwSpAN6BWQaZbnh187K7gNb8NtlXnZG7Q7OsG/OmcjwBShP70cCha7XUndANOdJz
+pmnLBgy+cxvJsWjq+BqSppYrgu0wMrwVZRE2owO5v557gIWzAq2wZRyW4U67JVSQ
+aZQQ8nm9czRYJkGAjgOYNUlsYmzmMg8652toM6dLWxALOhEE2hRmbeoQUJSeEadC
+VuMTXluFmOW9hdhZAZ2M/OsmaOr0oqGC6DTSpJ9rmOvDMykG7cU8ocPMNoY0pOt5
+cXJTCdo+eoHXbPlrg/tx
+=mrON
+-----END PGP SIGNATURE-----
