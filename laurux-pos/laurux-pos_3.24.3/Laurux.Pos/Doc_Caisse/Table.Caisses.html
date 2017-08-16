@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="fr-fr">
+  <head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <title>Table.Caisses.html</title>
+    <meta content="Jacky Tripoteau" name="author">
+  </head>
+  <body style="color: rgb(226, 226, 226); background-color: rgb(119, 119, 119);"
+    alink="#000088" link="#9797fc" vlink="#ff9900">
+    <table class="header" cellspacing="0" width="100%">
+      <tbody>
+        <tr valign="bottom">
+          <td rowspan="2" class="header" align="left">
+            <h1><span style="color: rgb(255, 204, 0);"> ~ Laurux.Pos ~</span> </h1>
+          </td>
+          <td class="header" align="right"><br>
+          </td>
+        </tr>
+        <tr valign="bottom">
+          <td class="header" align="left">
+            <p><img src="Larus.gif" style="width: 70px; height: 80px;" alt="Larus.gif"></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <big style="font-weight: bold; color: rgb(204, 153, 51);"><br>
+        &nbsp;&nbsp;&nbsp; Table des caisses</big></p>
+    <div style="text-align: center;"><img alt="Caisses.png" src="Caisses.png"></div>
+    <p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Dans cet écran on va pouvoir créer,
+      modifier ou supprimer les caisses.</p>
+    <p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Pour créer une caisse on donne un
+      numéro sur deux caractères maximum et un libellé sur 30 caractères
+      alphanumériques.<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Puis on indique le type de
+      l'imprimante qui sera affectée à la caisse. Ca peut-être l'imprimante qui
+      est déclarée par défaut dans le système ou alors une imprimante caisse
+      série relié sur la connexion 9 points du poste. Les imprimantes défaut
+      peuvent être de deux types. A4 ou 80 mm. Pour les imprimantes 80 mm il
+      faudra installer le drivers CUPS (les tests ont été effectués sur une
+      TM-T20II usb/ethernet/série)</p>
+    <p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; L' imprimante série devra être
+      paramètrée avec les valeurs suivantes :<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Vitesse = "19200"<br>
+      &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Parité = 0<br>
+      &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; DataBits = 8<br>
+      &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; StopBits = 1</p>
+    <p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Dans la zone&nbsp;"<font color="#800080">Type</font>"
+      on définira si le type de caisse est monoposte ou réseau. Dans le cas
+      d'une caisse déclarée en monoposte l'adresse du poste se mettra
+      automatiquement en arrivant sur la zone "<font color="#800080">Poste</font>",
+sinon
+      il faudra saisir manuellement l'adresse du poste qui servira pour la
+      caisse.<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; NB : Le nom du poste sur lequel est
+      installé la caisse ne doit pas dépasser 20 caractères.</p>
+    <p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;On a la possibilité de définir une
+      caisse école en activant le bouton&nbsp;"<font color="#800080">Caisse
+        école</font>" .<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Lorsqu'une caisse école est
+      déclarée, on peut travailler normalement sur cette caisse mais certaines
+      opérations ne seront pas permises comme par exemple l'impression de la
+      bande Z. Le stock, bien sur,&nbsp; ne sera pas mis à jour.&nbsp;<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Il est conseillé de supprimer la
+      caisse école lorsqu'elle n'est plus utile. &nbsp;&nbsp;</p>
+    <p align="center"><font color="#00ff00">----------------------------------------------------------------------------------------------------------------------</font></p>
+    <p style="color: rgb(196, 176, 253);"><a href="Table.Caisses.html">Retour en
+        haut de la page</a></p>
+    <p style="color: rgb(196, 176, 253);"><a href="Laurux.PosIndexParCategories.html">Retour
+a
+        l'index</a></p>
+    <p></p>
+    <p> &nbsp;&nbsp;&nbsp; </p>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="fr-fr"><head>
+
+
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Synchro.html</title>
+  
+
+  
+  
+  <meta content="Jacky Tripoteau" name="author"></head><body style="color: rgb(226, 226, 226); background-color: rgb(119, 119, 119);" alink="#000088" link="#9797fc" vlink="#ff9900">
+<table class="header" cellspacing="0" width="100%">
+
+  <tbody>
+    <tr valign="bottom">
+      <td rowspan="2" class="header" align="left">
+      <h1><span style="color: rgb(255, 204, 0);"> ~
+Laurux.Pos ~</span> </h1>
+      </td>
+      <td class="header" align="right"><br>
+      </td>
+    </tr>
+    <tr valign="bottom">
+      <td class="header" align="left">
+      <p><img src="Larus.gif" style="width: 70px; height: 80px;" alt="Larus.gif"></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; <big style="font-weight: bold; color: rgb(204, 153, 51);"><br>
+&nbsp;&nbsp;&nbsp; Généralités sur les synchronisation des caisses
+nomades.</big></p>
+
+<p><span style="color: white;">&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; Laurux.pos répond d'une façon simple à la
+synchronisation des caisses nomades lorsque les connexions réseaux ne
+sont pas possibles.</span><br>
+</p>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Synopsis de travail<span style="color: white;"> :</span>&nbsp; <br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&#8226; 1- Faire une sauvegarde de la base du serveur puis restaurer sur la
+caisse .<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&#8226; 2- Travailler avec la caisse en local (marchés, salons, lieux sans réseau, etc...).<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&#8226; 3- En fin de travail, imprimer la bande Z puis faire l'export avant
+de déconnecter la caisse.<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &#8226; 4- Sur le
+serveur restaurer les fichiers générés par la caisse sur le répertoire
+idoine.<br>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &#8226; 5- Lancer
+l'import des données.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &#8226; 6- Imprimer les
+bordereaux de chèques et de cartes puis faire le moulinage des tickets.
+<p style="text-align: left;"><br>
+<span style="color: white;"></span></p>
+
+<p style="text-align: left;"><span style="color: white;"></span><big style="font-weight: bold; color: rgb(204, 153, 51);">&nbsp;&nbsp;&nbsp;
+Initialisation coté caisse.</big></p>
+
+<p style="text-align: left;">
+<span style="color: white;"><span style="color: rgb(226, 226, 226);">&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; Aller dans les préférences de la caisse (Alt
++ P) sur le menu général puis activer le bouton de gestion des caisses
+nomades et renseigner le chemin d'export des fichiers.<br>
+</span></span></p>
+
+<p style="text-align: center;"><span style="color: white;">&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp; <span style="color: rgb(226, 226, 226);"><img style="width: 765px; height: 278px;" alt="Synchro.png" src="Synchro.png"><br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <br>
+</span></span></p>
+
+<p style="text-align: left;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Dés
+lors un nouveau bouton apparaitra dans le menu général de Laurux.pos.</p>
+
+<p style="text-align: center;"><img style="width: 352px; height: 465px;" alt="Synchro2.png" src="Synchro2.png">&nbsp;&nbsp;&nbsp; <span style="color: white;"><span style="color: rgb(226, 226, 226);"></span></span></p>
+
+<p style="text-align: left;"><span style="color: white;"><span style="color: rgb(226, 226, 226);">&nbsp;&nbsp;&nbsp;&nbsp; </span></span><big style="font-weight: bold; color: rgb(204, 153, 51);">Fonctionnement coté caisse.</big></p>
+
+<p style="text-align: left;"><span style="color: white;"><span style="color: rgb(226, 226, 226);">&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; Avant de quitter l'entreprise il faudra faire une
+sauvegarde de la base du serveur qu'on restaurera ensuite sur la
+caisse. On fait cela afin d'avoir sur la caisse les données à jour
+(articles, prix, clients etc...)<br>
+</span></span></p>
+
+<p style="text-align: left;"><span style="color: white;"><span style="color: rgb(226, 226, 226);">&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; Ensuite on travaillera normalement sur la caisse qui
+devra fonctionner avec la base locale qui aura été restaurée avant le
+départ.</span></span></p>
+
+<p style="text-align: left;"><span style="color: white;"><span style="color: rgb(226, 226, 226);">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; En
+fin de travail on imprimera le ticket Z et on lancera l'export.</span></span></p>
+
+<p style="text-align: center;"><span style="color: white;"><span style="color: rgb(226, 226, 226);"><img style="width: 590px; height: 337px;" alt="Synchro3.png" src="Synchro3.png"><br>
+</span></span></p>
+
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Une fois l'export effectué il faudra
+sauvegarder les trois fichiers générés par le programme. EntTicketz,
+LigTicketz, Regltz respectivement les entêtes des tickets, les lignes
+de tickets et le fichier des règlements. Ces fichiers se trouvent dans
+le répertoire défini dans les préférences de la caisse et devront être
+copiés sur le serveur.<big style="font-weight: bold; color: rgb(204, 153, 51);"><br>
+<br>
+&nbsp;&nbsp;&nbsp; Fonctionnement coté serveur.</big><span style="color: white;"><span style="color: rgb(226, 226, 226);"><br>
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; Pour activer la fonction aller dans les préférences
+onglet caisse. Cocher le bouton et saisir le chemin dans lequel se
+trouveront les fichiers d'import.<br>
+<br>
+</span></span>
+<div style="text-align: center;"><span style="color: white;"><span style="color: rgb(226, 226, 226);">&nbsp;&nbsp;&nbsp; <img style="width: 894px; height: 417px;" alt="Synchro4.png" src="Synchro4.png"></span></span><br>
+<span style="color: white;"><span style="color: rgb(226, 226, 226);"></span></span></div>
+
+<p style="text-align: left;"><span style="color: white;"><span style="color: rgb(226, 226, 226);">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Dès lors une nouvelle entrée apparaitra dans le menu général de Laurux.</span></span></p>
+<p style="text-align: center;"><span style="color: white;"><span style="color: rgb(226, 226, 226);"><img style="width: 918px; height: 215px;" alt="Synchro5.png" src="Synchro5.png"><br>
+</span></span></p>
+<p style="text-align: left;"><span style="color: white;"><span style="color: rgb(226, 226, 226);">&nbsp;&nbsp;&nbsp;
+&nbsp; A la réception des fichiers générés par la caisse il faudra les
+copier dans la destination définie dans les préférences puis on pourra
+lancer le programme de synchronistaion.</span></span></p>
+<p style="text-align: center;"><span style="color: white;"><span style="color: rgb(226, 226, 226);"><img style="width: 590px; height: 369px;" alt="Synchro6.png" src="Synchro6.png">  <br>
+</span></span></p>
+<p style="text-align: left;"><span style="color: white;"><span style="color: rgb(226, 226, 226);">&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; Il suffit de cliquer sur le bouton pour faire le
+traitement puis on fera les opérations normales de fin de journée.
+Impression des bordereaux de remises de chèques et de cartes puis
+moulinage des tickets pour le passage en comptabilité et l'archivage
+des tickets.</span></span></p>
+<p style="text-align: left;"><span style="color: white;"><span style="color: rgb(226, 226, 226);">&nbsp;&nbsp;&nbsp; <br>
+</span></span></p>
+<p style="text-align: left;"><span style="color: white;"><span style="color: rgb(226, 226, 226);">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; </span></span><big style="font-weight: bold; color: rgb(204, 153, 51);">NB:</big><span style="color: white;"><span style="color: rgb(226, 226, 226);">&nbsp;
+Si plusieurs caisses nomades travaillent simultanément il faudra faire
+séparément les opérations de synchronisation pour chaque caisse.<br>
+</span></span></p>
+<p align="center"><br>
+<span style="color: white;"><span style="color: rgb(226, 226, 226);"></span></span></p>
+<p align="center"><span style="color: white;"><span style="color: rgb(226, 226, 226);"></span></span> <font color="#00ff00">----------------------------------------------------------------------------------------------------------------------</font></p>
+
+<p style="color: rgb(196, 176, 253);"><a href="Synchro.html">Retour
+en haut de la page</a></p>
+
+<p style="color: rgb(196, 176, 253);"><a href="Laurux.PosIndexParCategories.html">Retour
+a l'index</a></p>
+
+<p> &nbsp;&nbsp;&nbsp; </p>
+
+</body></html>

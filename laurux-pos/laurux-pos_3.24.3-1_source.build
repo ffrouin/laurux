@@ -1,0 +1,42 @@
+ dpkg-buildpackage -rfakeroot -d -us -uc -S -sa
+dpkg-buildpackage: source package laurux-pos
+dpkg-buildpackage: source version 3.24.3-1
+dpkg-buildpackage: source distribution trusty
+dpkg-buildpackage: source changed by freddy <freddy@linuxtribe.fr>
+ dpkg-source --before-build laurux-pos_3.24.3
+dpkg-source: info: using options from laurux-pos_3.24.3/debian/source/options: --tar-ignore=.lang/* --tar-ignore=.gambas/* --tar-ignore=.git/*
+ fakeroot debian/rules clean
+dh clean 
+   dh_testdir
+   dh_auto_clean
+make[1]: Entering directory `/home/freddy/Desktop/L'Atelier à Musique/SI/github/laurux/laurux-pos/laurux-pos_3.24.3'
+rm Laurux.Pos/Laurux3-pos.gambas
+rm -rf Laurux.Pos/.gambas
+rm -rf Laurux.Pos/.lang
+make[1]: Leaving directory `/home/freddy/Desktop/L'Atelier à Musique/SI/github/laurux/laurux-pos/laurux-pos_3.24.3'
+   dh_clean
+ dpkg-source -b laurux-pos_3.24.3
+dpkg-source: info: using options from laurux-pos_3.24.3/debian/source/options: --tar-ignore=.lang/* --tar-ignore=.gambas/* --tar-ignore=.git/*
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building laurux-pos using existing ./laurux-pos_3.24.3.orig.tar.gz
+dpkg-source: warning: ignoring deletion of file Laurux.Pos/Laurux3-pos.gambas
+dpkg-source: warning: ignoring deletion of file Laurux.Pos/Doc_Caisse/Table.Caisses.html.bak
+dpkg-source: info: building laurux-pos in laurux-pos_3.24.3-1.debian.tar.gz
+dpkg-source: info: building laurux-pos in laurux-pos_3.24.3-1.dsc
+ dpkg-genchanges -S -sa >../laurux-pos_3.24.3-1_source.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build laurux-pos_3.24.3
+dpkg-source: info: using options from laurux-pos_3.24.3/debian/source/options: --tar-ignore=.lang/* --tar-ignore=.gambas/* --tar-ignore=.git/*
+dpkg-buildpackage: full upload (original source is included)
+Now running lintian...
+W: laurux-pos source: diff-contains-substvars debian/laurux.substvars
+W: laurux-pos source: debhelper-but-no-misc-depends laurux-pos
+W: laurux-pos source: package-needs-versioned-debhelper-build-depends 9
+W: laurux-pos source: out-of-date-standards-version 3.9.4 (current is 3.9.5)
+Finished running lintian.
+Now signing changes and any dsc files...
+ signfile laurux-pos_3.24.3-1.dsc 47CBC05C
+
+ signfile laurux-pos_3.24.3-1_source.changes 47CBC05C
+
+Successfully signed dsc and changes files

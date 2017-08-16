@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="fr-fr"><head>
+
+
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Installation.html</title><meta content="Jacky Tripoteau" name="author"></head><body style="color: rgb(226, 226, 226); background-color: rgb(119, 119, 119);" alink="#000088" link="#9797fc" vlink="#ff9900">
+<table class="header" cellspacing="0" width="100%">
+<tbody>
+<tr valign="bottom">
+<td rowspan="2" class="header" align="left">
+<h1><span style="color: rgb(255, 204, 0);"> ~
+Laurux.Pos ~</span> </h1>
+</td>
+<td class="header" align="right"><br>
+</td>
+</tr>
+<tr valign="bottom">
+<td class="header" align="left">
+<p><img src="Larus.gif" style="width: 70px; height: 80px;" alt="Larus.gif"></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; <big style="font-weight: bold; color: rgb(204, 153, 51);"><br>
+&nbsp;&nbsp;&nbsp; Installation.&nbsp;</big></p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Laurux et Laurux.Pos sont disponibles sous forme de deux fichiers exécutables séparés.<br>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; Laurux.Pos est dépendant de Laurux, c'est en quelque
+sorte un module extérieur. Il faut donc impérativement que
+l'installation de Laurux soit faite et que le logiciel soit
+opérationnel, sinon la caisse ne fonctionnera pas.<br>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; La base est commune pour les deux logiciels. Donc,
+une sauvegarde copiera l'ensemble des données du système de gestion et des caisses.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Dans le répertoire Laurux.pos il
+existe un dossier Doc_Caisse qu'il faut copier sous le répertoire
+Laurux car Laurux utilise aussi une partie de cette documentation.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Il faudra créer un lanceur sur le
+bureau qui chainera sur le programme Laurux.pos.gambas situé sous le
+répertoire Laurux.pos. A ce lanceur vous pouvez associer l'icône "<span style="color: rgb(255, 255, 51);">caisse.png</span>" situé sous ce même dossier.<br><br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Le module
+point de vente de Laurux est activé par l'option &nbsp; "<font color="#800080">Gestion des caisses</font>"
+&nbsp;dans l'onglet &nbsp;"<font color="#800080">Gestion
+(2)</font>" &nbsp;dans les préférences. Lorsque cette option
+est activée alors on aura une entrée supplémentaire ("<font color="#800080">Caisse</font>") dans le menu de Laurux.<br><br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Deux types de configurations sont possibles.<p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: rgb(255, 204, 51);">1- Monoposte.</span>
+&nbsp;</p><p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Après extraction de l'archive Laurux on aura un repertoire nommé "<span style="color: rgb(255, 255, 51);">Laurux</span>" qui contiendra l'ensemble des programmes et des
+documentations Laurux.&nbsp;Ce repertoire est créé automatiquement à
+l'installation de Laurux.&nbsp;<br>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Après extraction de l'archive Laurux.Pos on aura un autre repertoire nommé "<span style="color: rgb(255, 255, 51);">Laurux.Pos</span>" qui contiendra l'exécutable (<span style="color: white;">Laurux.Pos</span>) et un sous repertoire ("<span style="color: rgb(255, 255, 51);">Doc_Caisse</span>") qui contiendra la documentation de la caisse. Il faudra dupliquer ce dossier sous le répertoire Laurux car&nbsp;<span style="color: white;">Laurux</span> utilise aussi cette documentation.</p><p> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: rgb(204, 153, 51);"><span style="color: rgb(255, 204, 51);">2- Réseau.</span> </span>&nbsp;</p><p>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; Par commodité, je nomme serveur le poste sur lequel
+se trouve la base MySQL et Laurux. Le poste client (ou la caisse) étant
+celui ou sera copié Laurux.Pos.</p>
+<p>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; Sur le serveur on aura l'installation classique de
+<span style="color: white;">Laurux</span>, c'est à dire qu'on aura un repertoire nommé "<span style="color: rgb(255, 255, 51);">Laurux</span>"
+qui contiendra l'ensemble des fichiers nécessaire à son fonctionnement
+(Voir la doc d'installation de Laurux). Sous ce repertoire, on copiera aussi la
+documentation de Laurux.Pos, donc on aura un nouveau chemin nommé "<span style="color: rgb(255, 255, 51);">Doc_Caisse</span>" contenant tous les fichiers Html et Png de la documentation. <span style="font-style: italic;"><br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </span>NB:<span style="font-style: italic;"> On copie la documentation de <span style="color: white;">Laurux.Pos</span> car <span style="color: white;">Laurux</span> utilise aussi cette documentation.<br></span></p><p><span style="font-style: italic;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </span>Sur la caisse, après extraction de l'archive "Laurux.Pos<span style="color: rgb(255, 255, 51);"></span>" on aura un repertoire nommé "<span style="color: rgb(255, 255, 51);">Laurux.Pos</span>" qui contiendra l'exécutable (<span style="color: white;">Laurux.Pos</span>) et un sous repertoire ("<span style="color: rgb(255, 255, 51);">Doc_Caisse</span>") qui contiendra la documentation.</p><p>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; Concernant MySQL, il faut installer les paquets
+server et client sur la caisse car dans un proche avenir Laurux.Pos
+pourra fonctionner en mode autonome.</p><p style="text-align: left;">&nbsp;&nbsp;&nbsp; <big style="font-weight: bold; color: rgb(204, 153, 51);">Utilisation.</big>&nbsp;&nbsp; <br>
+</p>
+<p style="text-align: left;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; En
+premier, il faut aller sous Laurux puis dans les préférences afin
+d'activer l'option caisse. Ceci fait, il faut ensuite aller dans le menu
+"<span style="color: rgb(255, 255, 51);">Caisse</span>") afin de créer
+toutes les constantes, c'est à dire les caisses puis les caissières et
+le client caisse et enfin le libellé bas de ticket ainsi que le libellé
+des avoirs. </p>
+
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(204, 153, 51);"><span style="color: rgb(255, 204, 51);"></span></span>La&nbsp;première
+utilisation de la caisse ouvrira une fenêtre de configuration.&nbsp; Il faudra bien
+saisir l'adresse du serveur MySQL c'est à dire l'adresse du poste sur
+lequel fonctionne Laurux. Donc localhost en configuration monoposte et
+autre chose en configuration réseau.<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; <br><div style="text-align: center;"><img style="width: 391px; height: 276px;" alt="Install.png" src="Install.png">
+</div><p style="text-align: center;"><br></p>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; Si les données sont correctement saisies alors la
+caisse est opérationnelle. Pour le savoir il suffit d'aller en
+connexion de caisse.<br><p align="center"><font color="#00ff00">----------------------------------------------------------------------------------------------------------------------</font></p><p align="center"></p>
+<p style="color: rgb(196, 176, 253);"><a href="Installation.html">Retour
+en haut de la page</a></p>
+<p style="color: rgb(196, 176, 253);"><a href="Laurux.PosIndexParCategories.html">Retour
+a l'index</a></p>
+<p></p>
+<p> &nbsp;&nbsp;&nbsp; </p></body></html>

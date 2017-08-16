@@ -1,0 +1,50 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 16 Aug 2017 09:23:22 +0200
+Source: laurux-pos
+Binary: laurux-pos
+Architecture: source
+Version: 3.24.3-1
+Distribution: trusty
+Urgency: medium
+Maintainer: Freddy Frouin <freddy@linuxtribe.fr>
+Changed-By: freddy <freddy@linuxtribe.fr>
+Description: 
+ laurux-pos - Manage your business - POS (french)
+Changes: 
+ laurux-pos (3.24.3-1) trusty; urgency=medium
+ .
+   * Laurux Pos 3.24.3 released. Launcher added.
+Checksums-Sha1: 
+ cd65985a2101c8a1a9e28214e327e142a19f06b5 1807 laurux-pos_3.24.3-1.dsc
+ 70dee8af06c40ee3680cd190051dd5cbf42c2c70 6659582 laurux-pos_3.24.3.orig.tar.gz
+ 34b88ae0ab0f7e69589b463d8aa8d2836d0b189f 2184 laurux-pos_3.24.3-1.debian.tar.gz
+Checksums-Sha256: 
+ 182d6e5591da7b90ea9d36c4d8f20098035fc743369fbea9f1f9af842ca669ed 1807 laurux-pos_3.24.3-1.dsc
+ 1139017c32e7866b146e5f85a1251cce49ca53b19069fa35b73508ae0238e116 6659582 laurux-pos_3.24.3.orig.tar.gz
+ 249efa0188f89f2a2297e703b77778715c777958f7f0d5e755e427c128552bb3 2184 laurux-pos_3.24.3-1.debian.tar.gz
+Files: 
+ 0b821cda9a9d338e7eb2648fdf48b4d3 1807 x11 optional laurux-pos_3.24.3-1.dsc
+ 14c7e486b3f45bc71b2475342f9f6e2c 6659582 x11 optional laurux-pos_3.24.3.orig.tar.gz
+ 2ec3bf2ddc6f9d3aeddbb3b46cdb5b19 2184 x11 optional laurux-pos_3.24.3-1.debian.tar.gz
+Original-Maintainer: Freddy Frouin <freddy@linuxtribe.fr>
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBAgAGBQJZk/M/AAoJEPXzj9NHy8BcbXMP/R/h5R6dtYCIM2flhnV7wz+V
+EMfWePMy7SfFMaSU1T3ITm6nMVWhPKLLU62e30xy3IkRlJwnkTKqsDx2B2u1d14O
+snJKZJCPvoeZ/ylE8lcnePFY6T4QXDYa7kPF0WaSWvD8XWVFTbl5ExlksuBvW2VL
+m16Bimg18oAWaZQRKiyag9rJleRJrpjtNrVspxDjDRnHyFSvNCMuG/ZoWno8xhId
+j5LGlHJLnmoHtcU4JTWpWdm4oVRfD+giBXR1z1LQk4rf19vxVa+zINLEGR//skvV
+3w4lRWdjIB4hGh1C16VZOuSRtcvr1XjUuYTklJnsRce83M3jb6PsYBMZwV1Wi4RV
+bDYaLZGhQw4iQhhGu8eDv1gwzTSh7DYCBtnoBecBU3+YH4jN3snF7LYh1atojaEZ
+5iezzpZGhSbqW285IGXuPxzjSvdgYjFTfzfRRlr3crMRE7sOJgRz02RBxfgCfMxz
+YrQ34jxOIObqLuJYrND5GE0cLGvYPtMTA+hEQKeJc1ULzucRS6UaZeqpkehP+rWQ
+/AR7eifgOH5ECkWYoNtufmWddm4QMjTpg5B/hgDVqOerPBtWWWbl5adjRVXIVvpL
+qXDsDNcXfs28b/c87/iQSWVqkLLhxUuF0ZPnR1jrfWnne/xSPsYXJ/q02M24IPd2
+I/UmVmqitzvErnlQH0Ip
+=NLV+
+-----END PGP SIGNATURE-----

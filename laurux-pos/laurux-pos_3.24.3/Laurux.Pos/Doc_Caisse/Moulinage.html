@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="fr-fr"><head>
+
+
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Moulinage.html</title><meta content="Jacky Tripoteau" name="author"></head><body style="color: rgb(226, 226, 226); background-color: rgb(119, 119, 119);" alink="#000088" link="#9797fc" vlink="#ff9900">
+<table class="header" cellspacing="0" width="100%">
+<tbody>
+<tr valign="bottom">
+<td rowspan="2" class="header" align="left">
+<h1><span style="color: rgb(255, 204, 0);"> ~
+Laurux.Pos ~</span> </h1>
+</td>
+<td class="header" align="right"><br>
+</td>
+</tr>
+<tr valign="bottom">
+<td class="header" align="left">
+<p><img src="Larus.gif" style="width: 70px; height: 80px;" alt="Larus.gif"></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; <big style="font-weight: bold; color: rgb(204, 153, 51);"><br>
+&nbsp;&nbsp;&nbsp; Moulinage des tickets de caisse.</big></p>
+<p style="text-align: center;"><img style="width: 454px; height: 479px;" alt="Moulinage.png" src="Moulinage.png"><br>
+</p>
+<p>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; Comme indiqué sur la copie d'écran, ce programme va
+effectuer le passage des ventes caisses en comptabilité pour la journée
+sélectionnée et va mettre à jour la table des bons pour les clients en
+compte ayant eu des bons de caisse. <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; NB : Avant de faire le moulinage
+le programme va controler qu'il n'existe pas de tickets à une date
+antérieure à celle qui est séléctionnée. Si c'est le cas alors un
+message d'information préviendra l'utilisateur. Le moulinage à la date
+séléctionnée ne pourra donc pas se faire si des&nbsp; tickets
+antérieurs existent&nbsp; dans la table had hoc.<br>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; A l'issue du moulinage, les lignes de tickets de
+caisse seront archivées puis effacées de la table des tickets. Les
+bordereaux de remise de chèques et de cartes seront aussi effacées.</p><p>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; Pour que cette opération puisse être lancée il
+faudra que l'impression des bandes Z soient faite sur chaque caisse et
+que toutes les caisses déclarées dans la table des caisses soient
+déconnectées.<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Un contrôle est fait sur l'état de chaque caisse avant le moulinage.</p><p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;On aura une écriture de vente journalière en
+comptabilité qui sera la centralisation des tickets de caisse pour
+l'ensemble des caisses. Le journal des ventes utilisé sera celui qui
+est déclaré dans les paramètres.<br>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; Il y aura également une génération d'écritures de
+trésorerie pour les réglements par espèces, chèques et cartes.
+Attention, ces écritures n'étant pas lettrées, il faudra proceder à un
+lettrage manuel si on le souhaite.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; NB: Il faut penser a renseigner
+les comptes de virements internes&nbsp; dans les préférences. Le
+moulinage ne pourra s'effectuer que si ces comptes sont completés. <br>
+</p>
+<p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; NB: Les réglements hors vente
+ne générent pas d'écritures de trésorerie. Il faudra donc les passer
+manuellement en compta à partir de la bande Z.<br>
+</p>
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; NB: Le programme effectue une sauvegarde avant de
+faire le moulinage. Ces sauvegardes sont copiées sous un répertoire
+nommé "Sauve" et sont nommées Laurux.sql suivi de la date de la
+sauvegarde sous la forme "yyyymmdd". Ex Laurux.sql20091229.<br>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; Ces fichiers n'étant pas épurés d'une manière
+automatique, il conviendra de les effacer manuellement de temps à autre.<p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Rappel : Les bandes Z doivent être archivées.<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;</p><p align="center"><font color="#00ff00">----------------------------------------------------------------------------------------------------------------------</font></p>
+<p style="color: rgb(196, 176, 253);"><a href="Moulinage.html">Retour
+en haut de la page</a></p>
+<p style="color: rgb(196, 176, 253);"><a href="Laurux.PosIndexParCategories.html">Retour
+a l'index</a></p>
+<p></p>
+<p> &nbsp;&nbsp;&nbsp; </p></body></html>

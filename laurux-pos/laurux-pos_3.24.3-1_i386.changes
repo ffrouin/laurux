@@ -1,0 +1,23 @@
+Format: 1.8
+Date: Wed, 16 Aug 2017 09:23:22 +0200
+Source: laurux-pos
+Binary: laurux-pos
+Architecture: i386
+Version: 3.24.3-1
+Distribution: trusty
+Urgency: medium
+Maintainer: Freddy Frouin <freddy@linuxtribe.fr>
+Changed-By: freddy <freddy@linuxtribe.fr>
+Description: 
+ laurux-pos - Manage your business - POS (french)
+Changes: 
+ laurux-pos (3.24.3-1) trusty; urgency=medium
+ .
+   * Laurux Pos 3.24.3 released. Launcher added.
+Checksums-Sha1: 
+ 8fb6baca2a3461bff5283c7fdafacdc994d85d1b 4118184 laurux-pos_3.24.3-1_i386.deb
+Checksums-Sha256: 
+ de03683002337c7ce11710690318198f6851c7ae4589bb7b92e743ded7944c69 4118184 laurux-pos_3.24.3-1_i386.deb
+Files: 
+ c28a793adb822ea6f5684b94642e59b2 4118184 x11 optional laurux-pos_3.24.3-1_i386.deb
+Original-Maintainer: Freddy Frouin <freddy@linuxtribe.fr>

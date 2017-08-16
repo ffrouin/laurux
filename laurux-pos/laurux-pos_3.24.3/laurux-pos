@@ -1,0 +1,42 @@
+#!/bin/bash
+#
+# Object : script used to launch laurux
+# Author: Freddy Frouin <freddy.frouin@linuxtribe.fr>
+# Release : 3.24.3 - options
+# Date: Wen Jul 26 08:43:46 2017
+
+release=3.24.3
+lauruxrelease=3.24.3
+maintenance="Freddy Frouin <freddy@linuxtribe.fr>"
+
+homelink=$HOME/Laurux.Pos
+
+case "$1" in
+--help|-h)
+	echo "Usage:"
+	echo "	$0 -h|--help		Help screen"
+	echo "	$0 -v|--version	Version"
+	echo
+	echo "Don't forget to setup an access to your sql database"
+	echo "in order laurux to start up."
+	echo
+	echo "With mysql, once logged in, you may run something like :"
+	echo
+	echo "	> CREATE USER 'new_user'@'localhost' IDENTIFIED BY 'new_password';"
+	echo "	> GRANT ALL ON Laurux*.* TO 'new_user'@'localhost';"
+	echo "	> FLUSH PRIVILEGES;"
+	echo
+	;;
+--version|-v)
+	echo "Laurux-Pos release for debian systems v$release"
+	echo " -> package includes Laurux.Pos $lauruxrelease"
+	echo " -> support : $maintenance"
+	;;
+*)
+	if [ ! -e $homelink ]; then
+		ln -s /usr/share/Laurux.Pos $homelink
+	fi
+
+	$HOME/Laurux.Pos/Laurux3-pos.gambas && rm $homelink
+	;;
+esac
