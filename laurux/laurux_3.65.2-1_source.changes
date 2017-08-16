@@ -1,0 +1,50 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 16 Aug 2017 09:18:30 +0200
+Source: laurux
+Binary: laurux
+Architecture: source
+Version: 3.65.2-1
+Distribution: trusty
+Urgency: medium
+Maintainer: Freddy Frouin <freddy@linuxtribe.fr>
+Changed-By: freddy <freddy@linuxtribe.fr>
+Description: 
+ laurux     - Manage your business (french)
+Changes: 
+ laurux (3.65.2-1) trusty; urgency=medium
+ .
+   * Laurux 3.65.2 released.
+Checksums-Sha1: 
+ 0c243664aec4d076d7f8dcc93c14389dbd540cc6 1777 laurux_3.65.2-1.dsc
+ e7997eae3e34f9bb1de116825ee6658a66ef51c4 27345186 laurux_3.65.2.orig.tar.gz
+ 38893e3a730a5e07f3f8b31f30bf6901c33c67e7 10615 laurux_3.65.2-1.debian.tar.gz
+Checksums-Sha256: 
+ 182f94e9cb5bb825b40730756b0967784adb9c7f388bf3d38e86c261e79c93a4 1777 laurux_3.65.2-1.dsc
+ 1d758d098ace942f83a3885f68f2c68d547ea41c643e1713cbbbc4cf3d7dc558 27345186 laurux_3.65.2.orig.tar.gz
+ 7e051dc57829eb4ae53e7ec1ec4a05850b952f2b0956d5e331c6609f9980df97 10615 laurux_3.65.2-1.debian.tar.gz
+Files: 
+ ed049050d7c39a412a1b1969426076f2 1777 x11 optional laurux_3.65.2-1.dsc
+ 9045e15283339a2fc3d84c03dd208c72 27345186 x11 optional laurux_3.65.2.orig.tar.gz
+ 68b76e37b45208b4fea41290abbbb5ac 10615 x11 optional laurux_3.65.2-1.debian.tar.gz
+Original-Maintainer: Freddy Frouin <freddy@linuxtribe.fr>
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBAgAGBQJZk/KqAAoJEPXzj9NHy8Bc65gP/3awFxHRk7QQqrmju83Nh7AU
+Y8HAkzaaEPMulBZ1IewCtZ7T/fFO4VFTbGA3hw6sUKxMDoimb0Zi6qgAs3sJ5TBJ
+SIpwKqZ2Uqd9rGT38xlzDabsNwfc2Po2FFQLJvezMkGy70a+bEGcjGAuAD6AwDGE
+rFSXcIlpHirp9qG5gyOAh2A5xiMbRBDjpx5s15fVZkq39E4mVWewDvXakOS4rPMT
+MlQmnIPhntcdrLxdbte9GAXM79Yeo/CjMTKOJ3nAkbmr1cJzG1Ayi2pgQfbbQgSx
+iwyo0BUz6Qs0+E8wsEZhWAkkIhOFl8NBROr8l1qhJmyRjY+BPaOnyNL3nXzGN16D
+n0575DTC+L0a+FW0OcKJ3R1bpBdTikw5VahVSNudL3GfDBb6K2GfMClPhHKaHGgw
+ylgCM5/eWVkQ6n2jVmbPPVhbZYDAo/6qoCbptFA+qoR9TlLLWK2qaSHUSIfEMWqu
+fjqyXVKYDX7YIHoj1pUgQrDLrR1N85RFLEi21gmZRfyCVVIAe+bZEC8l+xo4SY1m
+jahzHOvyrqiUgk8cA1APL0Bui/3RMLeIYQ5Cb87TfdV0Sfq5Ux4PusTjsNJ9d2Iw
+LfvnZ9+nBOs/RT0VG01gytf5k+o1XwKABdN0ATt8eR+XJIo3k/tNfxMTfcmbUbgl
+rmMeKe6jzDqXf948UxEY
+=S1XZ
+-----END PGP SIGNATURE-----
