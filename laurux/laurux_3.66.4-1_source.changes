@@ -1,0 +1,50 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Thu, 31 Aug 2017 07:17:21 +0200
+Source: laurux
+Binary: laurux
+Architecture: source
+Version: 3.66.4-1
+Distribution: trusty
+Urgency: medium
+Maintainer: Freddy Frouin <freddy@linuxtribe.fr>
+Changed-By: freddy <freddy@linuxtribe.fr>
+Description: 
+ laurux     - Manage your business (french)
+Changes: 
+ laurux (3.66.4-1) trusty; urgency=medium
+ .
+   * Laurux 3.66.4 released.
+Checksums-Sha1: 
+ a2017e70f24de3735fba9588e2fd6c1dc8e22beb 1777 laurux_3.66.4-1.dsc
+ 2986dddff409b5d8b002107f37c8130f658bb7a9 27521118 laurux_3.66.4.orig.tar.gz
+ 1a3a0a634a3ad0549dd3b6c0be072108836db274 10659 laurux_3.66.4-1.debian.tar.gz
+Checksums-Sha256: 
+ d38aba71bf16caedd8191b82dfd754b98f429177516478f8f0ec4d2f8f867f9d 1777 laurux_3.66.4-1.dsc
+ 62f3a9ca64bb56e254dbd365251c0b78d6d87edf5ff490497cd4a09c9e73d8c4 27521118 laurux_3.66.4.orig.tar.gz
+ 3e16821eea1c5a5204902164500f2cc15d4a4c40b891352e24a8e5414e1e078e 10659 laurux_3.66.4-1.debian.tar.gz
+Files: 
+ 5b9409a09d208b795f074ff0b2a677c3 1777 x11 optional laurux_3.66.4-1.dsc
+ d48f94153c2c5f2c594abe2338aa60f7 27521118 x11 optional laurux_3.66.4.orig.tar.gz
+ 7a935aeec8c0b7b9378e17c889f77cb8 10659 x11 optional laurux_3.66.4-1.debian.tar.gz
+Original-Maintainer: Freddy Frouin <freddy@linuxtribe.fr>
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBAgAGBQJZp5x4AAoJEPXzj9NHy8Bcfh0QAIRj69wLEyCWRzcDJ162xYss
+M63S/Nf0S9OJGkigj5q/uNcUblPxL+d0QkLyVzVeQTdepN3O7BBxH+x/cMkox6XM
++2xb60JH567UgTWpG3EtCMvTPyCGP4PBgTrShgjXSCscULXjWCkqenWhZZH6J1Ek
+BZIavJJ7MiTzfpDcLdRkNHeGqdXsICXaBm5ON+0c8yC4sUZExiOvRE6AcrgjrIO5
+nMDsrOcq9UmeNAxr49EL2VxpuN0KTO3cB6XoUua/bqolPbWpX0qFHGJBHrMd/0hA
+B7hE7IfknqjCO7P7MejLiCnOYq1lr+/kEsqelSxK4fB//FE9Fu9nOgx4F3cdN74A
+Ue7vKVdCZ6DSAfQh74sAvXQGrwKkbYlCUiTutTygyXMjaoYKp2e6LqoX1S7M/tYk
+PNzaDa5/mDdxx8C+Yf4eyKkb6pZ6sRAqjTMfs0TRylJ+TrFmeSDYr1AWpEepaU4W
+hvy5GLn1TT/gv5JA2nGAd3t8RO4Ff+rf1QvhnEZlYhgfmnVyLfqnBrX4oWdx6RYn
+bFiYoh10mc4BOo7vMxd5vpYolmSOf6lxGE+SKjQ3klYhVOdNI3iSDCu5dIr1Ym3V
+24vyppP0GJ1/Lewp70+vVyt/5/YpH2cUJDBu+8v7uSGZtmV9IDlvzE7PAEzAu4ww
+yXLON2Ev5Ydjf4+zZicU
+=3HAF
+-----END PGP SIGNATURE-----
