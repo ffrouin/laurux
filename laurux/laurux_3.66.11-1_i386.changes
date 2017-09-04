@@ -1,0 +1,23 @@
+Format: 1.8
+Date: Mon, 04 Sep 2017 10:58:16 +0200
+Source: laurux
+Binary: laurux
+Architecture: i386
+Version: 3.66.11-1
+Distribution: trusty
+Urgency: medium
+Maintainer: Freddy Frouin <freddy@linuxtribe.fr>
+Changed-By: freddy <freddy@linuxtribe.fr>
+Description: 
+ laurux     - Manage your business (french)
+Changes: 
+ laurux (3.66.11-1) trusty; urgency=medium
+ .
+   * Laurux 3.66.1 released. Serveur-Maj utility has been added to package.
+Checksums-Sha1: 
+ 5c5ee0401316e173985a3187e6904941228d8396 14937038 laurux_3.66.11-1_i386.deb
+Checksums-Sha256: 
+ ec5b44b48199262e0ac76167508e16c86f006137ac01bf3f32bc77aee5b8f33a 14937038 laurux_3.66.11-1_i386.deb
+Files: 
+ 2349713ed9a266e075d5df9f5dd59443 14937038 x11 optional laurux_3.66.11-1_i386.deb
+Original-Maintainer: Freddy Frouin <freddy@linuxtribe.fr>

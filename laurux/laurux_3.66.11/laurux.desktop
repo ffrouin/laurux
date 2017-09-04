@@ -1,0 +1,6 @@
+[Desktop Entry]
+	Name=Laurux
+	Exec=laurux
+	Icon=/usr/share/Laurux3/Icones/Larus.png
+	Type=Application
+	Categories=Office;

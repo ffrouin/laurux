@@ -1,0 +1,50 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Mon, 04 Sep 2017 10:58:16 +0200
+Source: laurux
+Binary: laurux
+Architecture: source
+Version: 3.66.11-1
+Distribution: trusty
+Urgency: medium
+Maintainer: Freddy Frouin <freddy@linuxtribe.fr>
+Changed-By: freddy <freddy@linuxtribe.fr>
+Description: 
+ laurux     - Manage your business (french)
+Changes: 
+ laurux (3.66.11-1) trusty; urgency=medium
+ .
+   * Laurux 3.66.1 released. Serveur-Maj utility has been added to package.
+Checksums-Sha1: 
+ 2b294fd4102cb4e7ea23ec657bffe678f040feec 1784 laurux_3.66.11-1.dsc
+ 0baabaab9d8d9c0f8890eb889e56956b8dff7b71 27388470 laurux_3.66.11.orig.tar.gz
+ 9f55ca7065c840a5aacfd204734ce92a885063d7 10658 laurux_3.66.11-1.debian.tar.gz
+Checksums-Sha256: 
+ 5fc0dfe01bbd932234ad505b2debfaa0c42c50221c6213117eac03de2de1b314 1784 laurux_3.66.11-1.dsc
+ eca44cb8e66ede7d9ebebe1701abbaf050173e08ccbea70fd3a21ffa5034f595 27388470 laurux_3.66.11.orig.tar.gz
+ afce5cb71a7b6381eb772047179fd509c303d89ad5b86a73044eedfa2570fc44 10658 laurux_3.66.11-1.debian.tar.gz
+Files: 
+ e8335da336b353376b2847f4369fd650 1784 x11 optional laurux_3.66.11-1.dsc
+ f065b3d1781afde9a3ea2b938837ca24 27388470 x11 optional laurux_3.66.11.orig.tar.gz
+ cdd58a23bc5f8ba4ffd6318e3d3a1d5c 10658 x11 optional laurux_3.66.11-1.debian.tar.gz
+Original-Maintainer: Freddy Frouin <freddy@linuxtribe.fr>
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBAgAGBQJZrRaqAAoJEPXzj9NHy8BcwPYP/RTshugDunreDqocW8DBu3G8
+tRV2WZ0k2BDh42QUp1K4YY0MkewjKhjBExEY6rixcRoLBdOg5gMiNjALfLDK8Jl3
+OeMJF/ajwEFoJHDePWdBMq1VdGUBUuF9FZFhIYZciLWKoxbVQiyvR9I1ywiKWeby
+lS5vVHt4cwVTWC3xhnq0RK9zq3i5+k0Oe4N5o/dj0r0QPvrtFxzprH6jW5cVm0ck
+kxbg/krJ1NjiuqsLakmfkAfvu2kZ6Jo6dAhrCdNeZvgIS69+KoTWygo1XrWgd7BZ
+xa/fqOuk45ijwuKLJdfpmZa641yh7PWPdyPv0fgEue9j6TdQhvsRIVS1KdaS32vQ
+YysqvmTbqlEi4lQLqZiXVYPH7VR+M+qjcSVQLwm12zn0RmTq0OkBXJCBXKO5eOpZ
+EmOKrLpixcshS0p1A4hOCwNJw/Vnrpnq3ufum8AccWp6tejdBKR824obaeVFpNDF
+9987G6L2cI1KnLoBx+FOB/lfSYa5tPZnxoVSgJwsVE3OHIDN3g1ZCB+gru+m5N5J
+PjmJrcshhI2K34U1+TtT9pesrYZrXnPNzucnwANp1B1fecdrzl8Wkrz6ZElAsNua
+tDJk5PAEauzwlKuWZLRD8y/LtFmJj1lAd3ejqv/qrqrH/tJEVXFd2+phgokte5U5
+7G4+XnCLAbgzM84LktYC
+=n0V4
+-----END PGP SIGNATURE-----
