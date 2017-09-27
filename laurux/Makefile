@@ -1,5 +1,5 @@
-currentRelease = 3.66.4
-nextRelease = 3.66.11
+currentRelease = 3.66.11
+nextRelease = 3.66.17
 gpgkey=47CBC05C
 lauruxRelease = $(shell wget --quiet https://github.com/Laurux/Laurux/raw/master/.project -O - | grep ^Version | sed -e s/Version=//)
 

@@ -1,0 +1,42 @@
+#!/bin/bash
+#
+# Object : script used to launch laurux
+# Author: Freddy Frouin <freddy.frouin@linuxtribe.fr>
+# Release : 3.66.17 - options
+# Date: Wen Jul 23 18:09:08 2017
+
+release=3.66.17
+lauruxrelease=3.66.17
+maintenance="Freddy Frouin <freddy@linuxtribe.fr>"
+
+homelink=$HOME/Laurux3
+
+case "$1" in
+--help|-h)
+	echo "Usage:"
+	echo "	$0 -h|--help		Help screen"
+	echo "	$0 -v|--version		Version"
+	echo
+	echo "Don't forget to setup an access to your sql database"
+	echo "in order laurux to start up."
+	echo
+	echo "With mysql, once logged in, you may run something like :"
+	echo
+	echo "	> CREATE USER 'new_user'@'localhost' IDENTIFIED BY 'new_password';"
+	echo "	> GRANT ALL ON Laurux*.* TO 'new_user'@'localhost';"
+	echo "	> FLUSH PRIVILEGES;"
+	echo
+	;;
+--version|-v)
+	echo "Laurux release for debian systems v$release"
+	echo " -> package includes Laurux $lauruxrelease"
+	echo " -> support : $maintenance"
+	;;
+*)
+	if [ ! -e $homelink ]; then
+		ln -s /usr/share/Laurux3 $homelink
+	fi
+
+	$HOME/Laurux3/Laurux3.gambas && rm $homelink
+	;;
+esac
