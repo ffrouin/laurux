@@ -1,11 +1,19 @@
-currentRelease = 3.66.17
-nextRelease = 3.67.3
+currentRelease = 3.67.3
+nextRelease = 3.67.11
 gpgkey=47CBC05C
 lauruxRelease = $(shell wget --quiet https://github.com/Laurux/Laurux/raw/master/.project -O - | grep ^Version | sed -e s/Version=//)
 
 all: release-check
 
-update: release-new orig-pkg release-src release-bin release-ppa
+update: release-new orig-pkg release-src release-bin release-ppa git-update
+
+git-update:
+	@cd laurux_$(nextRelease) && make deep-clean
+	@git rm -r laurux_$(currentRelease)
+	@git rm laurux_$(currentRelease)*
+	@git add *
+	@git commit
+	@git push
 
 release-new:
 	@mv laurux_$(currentRelease) laurux_$(nextRelease)
