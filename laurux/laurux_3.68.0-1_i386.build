@@ -1,0 +1,76 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc -i -b
+dpkg-buildpackage: source package laurux
+dpkg-buildpackage: source version 3.68.0-1
+dpkg-buildpackage: source distribution trusty
+dpkg-buildpackage: source changed by freddy <freddy@linuxtribe.fr>
+ dpkg-source -i --before-build laurux_3.68.0
+dpkg-buildpackage: host architecture i386
+dpkg-source: info: using options from laurux_3.68.0/debian/source/options: --tar-ignore=.lang/* --tar-ignore=.gambas/* --tar-ignore=.git/*
+ fakeroot debian/rules clean
+dh clean 
+   dh_testdir
+   dh_auto_clean
+make[1]: Entering directory `/home/freddy/Desktop/L'Atelier à Musique/SI/github/laurux/laurux/laurux_3.68.0'
+rm Laurux3/Laurux3.gambas
+rm Laurux3/Serveur-Maj.gambas
+rm -rf Laurux/.gambas
+rm -rf Laurux/.lang
+rm -rf Serveur-Maj/.gambas
+rm -rf Serveur-Maj/.lang
+make[1]: Leaving directory `/home/freddy/Desktop/L'Atelier à Musique/SI/github/laurux/laurux/laurux_3.68.0'
+   dh_clean
+ debian/rules build
+dh build 
+   dh_testdir
+   dh_auto_configure
+   dh_auto_build
+make[1]: Entering directory `/home/freddy/Desktop/L'Atelier à Musique/SI/github/laurux/laurux/laurux_3.68.0'
+cd Laurux && gbc3 -agt && gba3 -o ../Laurux3/Laurux3.gambas
+OK
+cd Serveur-Maj && gbc3 -agt && gba3 -o ../Laurux3/Serveur-Maj.gambas
+OK
+make[1]: Leaving directory `/home/freddy/Desktop/L'Atelier à Musique/SI/github/laurux/laurux/laurux_3.68.0'
+   dh_auto_test
+ fakeroot debian/rules binary
+dh binary 
+   dh_testroot
+   dh_prep
+   dh_auto_install
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_installman
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: Depends field of package laurux: unknown substitution variable ${shlibs:Depends}
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: warning: 'debian/laurux/DEBIAN/control' contains user-defined field 'Original-Maintainer'
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+
+dpkg-deb: building package `laurux' in `../laurux_3.68.0-1_i386.deb'.
+ dpkg-genchanges -b >../laurux_3.68.0-1_i386.changes
+dpkg-genchanges: binary-only upload - not including any source code
+ dpkg-source -i --after-build laurux_3.68.0
+dpkg-source: info: using options from laurux_3.68.0/debian/source/options: --tar-ignore=.lang/* --tar-ignore=.gambas/* --tar-ignore=.git/*
+dpkg-buildpackage: binary only upload (no source included)
+Now running lintian...
+W: laurux: wrong-bug-number-in-closes l219:#nnnn
+E: laurux: helper-templates-in-copyright
+W: laurux: copyright-has-url-from-dh_make-boilerplate
+E: laurux: copyright-contains-dh_make-todo-boilerplate
+W: laurux: readme-debian-contains-debmake-template
+W: laurux: description-starts-with-leading-spaces
+W: laurux: extended-description-line-too-long
+W: laurux: extended-description-line-too-long
+W: laurux: extra-license-file usr/share/Laurux3/Gpl3.txt
+W: laurux: extra-license-file usr/share/Laurux3/Install/GPL.txt.tar.gz
+W: laurux: manpage-has-bad-whatis-entry usr/share/man/man1/laurux.1.gz
+Finished running lintian.

@@ -1,0 +1,50 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 13 Dec 2017 11:33:24 +0100
+Source: laurux
+Binary: laurux
+Architecture: source
+Version: 3.68.0-1
+Distribution: trusty
+Urgency: medium
+Maintainer: Freddy Frouin <freddy@linuxtribe.fr>
+Changed-By: freddy <freddy@linuxtribe.fr>
+Description: 
+ laurux     - Manage your business (french)
+Changes: 
+ laurux (3.68.0-1) trusty; urgency=medium
+ .
+   * Laurux 3.68.0 released.
+Checksums-Sha1: 
+ 3eb5e938a6ddfd3abf3a13f36af47c783c2bea1e 1777 laurux_3.68.0-1.dsc
+ 2613f1cc6e3ca17b4614d25f6c7fefcbf67804f9 32668304 laurux_3.68.0.orig.tar.gz
+ 0ddeeadadf870ff2e36c30cc0602370f3129229b 10761 laurux_3.68.0-1.debian.tar.gz
+Checksums-Sha256: 
+ ca2ff88fe4f036128ce3dea4ac3709bac65901c251160fa64f5bdfd44d44b5a3 1777 laurux_3.68.0-1.dsc
+ d2264f5ce40c99869d2e2d7ac46fc0d4d59bfce615ca4329a5ab63c21cde1aa9 32668304 laurux_3.68.0.orig.tar.gz
+ 4cbf51a38fe3dac0e84f28984dd1e42e1e3269f16f6f85d9cb531bcd91ded322 10761 laurux_3.68.0-1.debian.tar.gz
+Files: 
+ 0f70cefe47d263c800556654967635d5 1777 x11 optional laurux_3.68.0-1.dsc
+ 0060ab12d5e20459d56855fb57a220d3 32668304 x11 optional laurux_3.68.0.orig.tar.gz
+ c53545aff2050cef8cf4847228c047c9 10761 x11 optional laurux_3.68.0-1.debian.tar.gz
+Original-Maintainer: Freddy Frouin <freddy@linuxtribe.fr>
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBAgAGBQJaMQJGAAoJEPXzj9NHy8BcchsQAJ8PA3dzWiFCc5bwO6FOvSfR
+Ex2VkIe4cWAkPhWsE89YhmQIgWoXKP8GnUatEVMJgVi/+TYL5kEfsuVC04mqZWNI
+6f0SgNpLlqQgXPwIZXyFwNUvq0lIZbqgqVDOu6XRvDd9ZdpE2lTzy7SUM9yaZuIl
+eXgaNPONA0XiGBcl+9gX/W4hAs3oj01JRVkiaEgRDl/c/5c4dMxyZNzfZePHxA/2
+OwHdEZqgqR3dp2BRxElIN3BOCMDNFepTFYisaQ5Ms6yUuG5X2nwwuK1wSvVW8bG5
+AVlgidfMlCeF67d8Nto4acw4tY0pOI2EpUn713CchUi56x5lgWXUbyqFYpY+4mYz
+6FhEw/WFUeddL3LSlVNAS5GOoaB8XqhV5ms5v9WPTsQQiCweh1Be+MkNAa62qu9A
+Mm25pvlM+slIv1ImczTcBch8yjcShUugv5kJPMigovUvK1z9mleCQMPnLzRUNs+/
+Qg4MEJUtxCwslekRrQKfLZpXwqqwuhbWjpF8MHBUkO3/Zr2dJ4Km/2SZPxKZBDYk
+4u1GVbLlpts71F5Gg8zZdFAzM7EKTOA7ODr2VYk4hSj9uE+Iuk0+uM7I4hqeim5r
+8Dxh67GUaFc0OPXK/vNDe8XpIKPEGhygXRT8utT7alt9LCQRxU2p0H01Fn5VQfp9
+BrObTyzvYPdc5c2tqiIQ
+=zomt
+-----END PGP SIGNATURE-----
